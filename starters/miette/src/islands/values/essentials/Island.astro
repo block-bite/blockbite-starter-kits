@@ -1,0 +1,27 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'values/essentials'>;
+const { eyebrow, heading, leTempsEyebrow, leTempsHeading, leTempsBody, laMatiereEyebrow, laMatiereHeading, laMatiereBody, lePartageEyebrow, lePartageHeading, lePartageBody } = Astro.props;
+---
+
+<section class="bg-beurre py-12 px-page-gutter gap-10 text-base text-left w-full max-w-full flex flex-col items-stretch justify-start md:py-20 md:px-16">
+  <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{eyebrow}</p>
+  <h2 class="text-bordeaux font-display font-normal text-title-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:text-display md:tracking-[-1.5px]">{heading}</h2>
+  <div class="gap-12 text-base text-left max-w-full grid flex-col grid-cols-1 items-stretch md:grid-cols-2 lg:grid-cols-3">
+    <div class="gap-6 text-base text-left max-w-full flex flex-col items-stretch justify-start">
+      <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{leTempsEyebrow}</p>
+      <h2 class="text-bordeaux font-display font-normal text-feature text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:tracking-[-1.5px]">{leTempsHeading}</h2>
+      <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{leTempsBody}</p>
+    </div>
+    <div class="gap-6 text-base text-left max-w-full flex flex-col items-stretch justify-start">
+      <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{laMatiereEyebrow}</p>
+      <h2 class="text-bordeaux font-display font-normal text-feature text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:tracking-[-1.5px]">{laMatiereHeading}</h2>
+      <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{laMatiereBody}</p>
+    </div>
+    <div class="gap-6 text-base text-left max-w-full flex flex-col items-stretch justify-start">
+      <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{lePartageEyebrow}</p>
+      <h2 class="text-bordeaux font-display font-normal text-feature text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:tracking-[-1.5px]">{lePartageHeading}</h2>
+      <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{lePartageBody}</p>
+    </div>
+  </div>
+</section>

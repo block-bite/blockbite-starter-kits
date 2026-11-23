@@ -1,0 +1,39 @@
+version: 1
+fields:
+  heading:
+    type: string
+    label: Motion study headline
+  brushImage:
+    type: image
+    label: Ink texture
+  note:
+    type: string
+    label: Motion study caption
+  missionLead:
+    type: string
+    label: Opening paragraph
+    group: Mission
+  missionFollow:
+    type: string
+    label: Second paragraph
+    group: Mission
+  storyLabel:
+    type: string
+    label: Story link text
+    group: Mission
+  storyHref:
+    type: link
+    label: Story destination
+    group: Mission
+  avatarImage:
+    type: image
+    label: Portrait
+    group: Signature
+  signatureImage:
+    type: image
+    label: Handwritten signature
+    group: Signature
+  signerName:
+    type: string
+    label: Signer name
+    group: Signature

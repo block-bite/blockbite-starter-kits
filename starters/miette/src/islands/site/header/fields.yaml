@@ -1,0 +1,65 @@
+version: 1
+fields:
+  logo:
+    type: image
+    label: Brand symbol
+  logoAlt:
+    type: string
+    label: Brand symbol alt
+  brand:
+    type: string
+    label: Brand
+  brandHref:
+    type: link
+    label: Brand Href
+  toggleLabel:
+    type: string
+    label: Mobile menu accessible label
+  menuLabel:
+    type: string
+    label: Menu Label
+  menuHref:
+    type: link
+    label: Menu Href
+  houseLabel:
+    type: string
+    label: House Label
+  houseHref:
+    type: link
+    label: House Href
+  journalLabel:
+    type: string
+    label: Journal Label
+  journalHref:
+    type: link
+    label: Journal Href
+  visitLabel:
+    type: string
+    label: Visit Label
+  visitHref:
+    type: link
+    label: Visit Href
+  closeLabel:
+    type: string
+    label: Mobile menu close label
+  menuEyebrow:
+    type: string
+    label: Mobile menu introduction
+  menuSignature:
+    type: string
+    label: Mobile menu signature
+  contactHeading:
+    type: string
+    label: Contact heading
+  contactLocation:
+    type: string
+    label: Contact location
+  contactNote:
+    type: string
+    label: Contact details note
+  contactLabel:
+    type: string
+    label: Contact link label
+  contactHref:
+    type: link
+    label: Contact destination

@@ -1,0 +1,29 @@
+version: 1
+fields:
+  brand:
+    type: image
+    label: Wordmark
+  brandAlt:
+    type: string
+    label: Wordmark alternative text
+  brandHref:
+    type: link
+    label: Home link
+  arrivalsLabel:
+    type: string
+    label: Arrivals label
+  arrivalsHref:
+    type: link
+    label: Arrivals href
+  storiesLabel:
+    type: string
+    label: Stories label
+  storiesHref:
+    type: link
+    label: Stories href
+  topLabel:
+    type: string
+    label: Top label
+  topHref:
+    type: link
+    label: Top href

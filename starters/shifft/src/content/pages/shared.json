@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "template": "page",
+  "title": "SHIFFT shared site",
+  "sections": [
+    {
+      "island": "site/header",
+      "fields": {
+        "brand": "/images/shifft-word.svg",
+        "brandAlt": "SHIFFT home",
+        "brandHref": "#top",
+        "symbol": "/images/shifft-mark.webp",
+        "collectionLabel": "Shop",
+        "collectionHref": "#best-sellers",
+        "storyLabel": "Motion study",
+        "storyHref": "#motion"
+      }
+    },
+    {
+      "island": "site/footer",
+      "fields": {
+        "brand": "/images/shifft-word.svg",
+        "brandAlt": "SHIFFT",
+        "brandHref": "#top",
+        "arrivalsLabel": "New arrivals",
+        "arrivalsHref": "#collection",
+        "storiesLabel": "Motion study",
+        "storiesHref": "#motion",
+        "topLabel": "Back to top",
+        "topHref": "#top"
+      }
+    }
+  ]
+}

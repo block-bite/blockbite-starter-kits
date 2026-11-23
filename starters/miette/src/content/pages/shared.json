@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "template": "page",
+  "title": "Shared site content",
+  "sections": [
+    {
+      "island": "site/announcement",
+      "fields": {
+        "eyebrow": "PARIS, BIENTÔT À VOUS.     ✳     DU BON PAIN, DU BON TEMPS."
+      }
+    },
+    {
+      "island": "site/header",
+      "fields": {
+        "brand": "miette club",
+        "brandHref": "/",
+        "menuLabel": "La carte",
+        "menuHref": "/la-carte/",
+        "houseLabel": "La maison",
+        "houseHref": "/la-maison/",
+        "journalLabel": "Le journal",
+        "journalHref": "/le-journal/",
+        "visitLabel": "Nous trouver",
+        "visitHref": "/nous-trouver/",
+        "logo": "/favicon.svg",
+        "logoAlt": "",
+        "toggleLabel": "Menu",
+        "closeLabel": "Fermer le menu",
+        "menuEyebrow": "Le bonheur, par ici.",
+        "menuSignature": "Du beurre. Du beau. Du bonheur.",
+        "contactHeading": "Passer nous voir",
+        "contactLocation": "Paris, France",
+        "contactNote": "Adresse et horaires bientôt dévoilés.",
+        "contactLabel": "bonjour@miette.example",
+        "contactHref": "mailto:bonjour@miette.example"
+      }
+    },
+    {
+      "island": "site/footer",
+      "fields": {
+        "signatureEyebrow": "LA VIE EST MEILLEURE AVEC DES MIETTES.",
+        "signatureHeading": "À très vite,\nles gourmands.",
+        "menuLabel": "La carte ↗",
+        "menuHref": "/la-carte/",
+        "houseLabel": "Notre histoire ↗",
+        "houseHref": "/la-maison/",
+        "visitLabel": "Nous trouver ↗",
+        "visitHref": "/nous-trouver/",
+        "brand": "miette club",
+        "copyright": "© 2026 Miette Club · Concept de boulangerie indépendant · Site de démonstration"
+      }
+    }
+  ]
+}

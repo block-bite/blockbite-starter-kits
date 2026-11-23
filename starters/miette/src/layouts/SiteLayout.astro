@@ -1,0 +1,41 @@
+---
+import '../styles/theme.css';
+import { getEntry } from 'astro:content';
+import Announcement from '../islands/site/announcement/Island.astro';
+import Header from '../islands/site/header/Island.astro';
+import Footer from '../islands/site/footer/Island.astro';
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const shared = await getEntry('pages', 'shared');
+if (!shared) throw new Error('Shared site content is missing.');
+---
+
+<!doctype html>
+<html lang="fr" class="scroll-smooth motion-reduce:scroll-auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#591B2B" />
+    <link rel="icon" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="m-0 bg-creme font-sans text-body text-encre antialiased">
+    <a
+      href="#contenu"
+      class="fixed top-3 left-4 z-50 -translate-y-24 bg-bordeaux px-5 py-3 focus:translate-y-0 rounded-button text-beurre focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none hover:bg-encre focus-visible:bg-encre active:bg-encre"
+    >Aller au contenu</a>
+    <div class="mx-auto max-w-site">
+      <slot name="header">
+        <Announcement {...shared.data.sections[0].fields} />
+        <Header currentPath={Astro.url.pathname} {...shared.data.sections[1].fields} />
+      </slot>
+      <main id="contenu"><slot /></main>
+      <slot name="footer"><Footer {...shared.data.sections[2].fields} /></slot>
+    </div>
+  </body>
+</html>

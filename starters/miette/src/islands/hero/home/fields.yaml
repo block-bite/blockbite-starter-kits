@@ -1,0 +1,29 @@
+version: 1
+fields:
+  eyebrow:
+    type: string
+    label: Eyebrow
+  heading:
+    type: string
+    label: Heading
+  body:
+    type: string
+    label: Body
+  actionLabel:
+    type: string
+    label: Action Label
+  actionHref:
+    type: link
+    label: Action Href
+  actionNote:
+    type: string
+    label: Action Note
+  signature:
+    type: string
+    label: Signature
+  image:
+    type: image
+    label: Image
+  imageAlt:
+    type: string
+    label: Image Alt

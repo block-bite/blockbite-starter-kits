@@ -1,0 +1,11 @@
+version: 1
+fields:
+  eyebrow:
+    type: string
+    label: Eyebrow
+  heading:
+    type: string
+    label: Heading
+  body:
+    type: string
+    label: Body

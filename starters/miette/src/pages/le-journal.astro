@@ -1,0 +1,17 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { getEntry } from 'astro:content';
+import HeroJournal from '../islands/hero/journal/Island.astro';
+import JournalLamination from '../islands/journal/lamination/Island.astro';
+import JournalSeasonal from '../islands/journal/seasonal/Island.astro';
+import JournalSlowMornings from '../islands/journal/slow-mornings/Island.astro';
+const page = await getEntry('pages', 'journal');
+if (!page) throw new Error('Missing journal content.');
+---
+
+<SiteLayout title={page.data.title} description="Gestes du fournil, fruits de saison et petits rituels du matin.">
+  <HeroJournal {...page.data.sections[0].fields} />
+  <JournalLamination {...page.data.sections[1].fields} />
+  <JournalSeasonal {...page.data.sections[2].fields} />
+  <JournalSlowMornings {...page.data.sections[3].fields} />
+</SiteLayout>

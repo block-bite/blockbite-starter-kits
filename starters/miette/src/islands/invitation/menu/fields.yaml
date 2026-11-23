@@ -1,0 +1,14 @@
+version: 1
+fields:
+  heading:
+    type: string
+    label: Heading
+  body:
+    type: string
+    label: Body
+  action:
+    type: string
+    label: Action
+  actionHref:
+    type: link
+    label: Action Href

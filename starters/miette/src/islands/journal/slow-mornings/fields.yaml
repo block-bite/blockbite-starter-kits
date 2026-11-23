@@ -1,0 +1,23 @@
+version: 1
+fields:
+  image:
+    type: image
+    label: Image
+  imageAlt:
+    type: string
+    label: Image Alt
+  histoireEyebrow:
+    type: string
+    label: Histoire Eyebrow
+  histoireHeading:
+    type: string
+    label: Histoire Heading
+  histoireBody:
+    type: string
+    label: Histoire Body
+  histoireAction:
+    type: string
+    label: Histoire Action
+  histoireHref:
+    type: link
+    label: Article destination

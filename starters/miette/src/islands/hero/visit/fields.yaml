@@ -1,0 +1,23 @@
+version: 1
+fields:
+  invitationEyebrow:
+    type: string
+    label: Invitation Eyebrow
+  invitationHeading:
+    type: string
+    label: Invitation Heading
+  invitationBody:
+    type: string
+    label: Invitation Body
+  invitationAction:
+    type: string
+    label: Invitation Action
+  invitationHref:
+    type: link
+    label: Invitation Href
+  image:
+    type: image
+    label: Image
+  imageAlt:
+    type: string
+    label: Image Alt

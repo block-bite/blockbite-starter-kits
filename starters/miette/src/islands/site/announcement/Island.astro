@@ -1,0 +1,9 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'site/announcement'>;
+const { eyebrow } = Astro.props;
+---
+
+<section class="bg-bordeaux py-[10px] px-3 gap-8 text-base text-left w-full max-w-full flex flex-col items-stretch justify-start md:py-[10px] md:px-16">
+  <p class="text-creme font-semibold text-micro text-center max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{eyebrow}</p>
+</section>

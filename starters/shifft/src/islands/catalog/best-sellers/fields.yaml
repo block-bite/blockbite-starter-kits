@@ -1,0 +1,73 @@
+version: 1
+fields:
+  heading:
+    type: string
+    label: Catalog heading
+  chalkName:
+    type: string
+    label: Product name
+    group: Chalk trail shoe
+  chalkColour:
+    type: string
+    label: Colourway
+    group: Chalk trail shoe
+  chalkPrice:
+    type: string
+    label: Price
+    group: Chalk trail shoe
+  chalkImage:
+    type: image
+    label: Product image
+    group: Chalk trail shoe
+  chalkAlt:
+    type: string
+    label: Image alternative text
+    group: Chalk trail shoe
+  chalkHref:
+    type: link
+    label: Product detail destination
+    group: Chalk trail shoe
+  moveName:
+    type: string
+    label: Product name
+    group: Move Tee
+  moveColour:
+    type: string
+    label: Colourway
+    group: Move Tee
+  movePrice:
+    type: string
+    label: Price
+    group: Move Tee
+  moveImage:
+    type: image
+    label: Product image
+    group: Move Tee
+  moveAlt:
+    type: string
+    label: Image alternative text
+    group: Move Tee
+  teeName:
+    type: string
+    label: Product name
+    group: Graphic tee
+  teeColour:
+    type: string
+    label: Colourway
+    group: Graphic tee
+  teePrice:
+    type: string
+    label: Price
+    group: Graphic tee
+  teeImage:
+    type: image
+    label: Product image
+    group: Graphic tee
+  teeAlt:
+    type: string
+    label: Image alternative text
+    group: Graphic tee
+  teeHref:
+    type: link
+    label: Print story destination
+    group: Graphic tee

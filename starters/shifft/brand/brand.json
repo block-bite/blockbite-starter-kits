@@ -1,0 +1,1231 @@
+{
+  "version": 1,
+  "document": {
+    "id": "local",
+    "revision": 2,
+    "visibility": "private",
+    "published": null,
+    "published_definition": null,
+    "definition": {
+      "schema": "blockbite.brand/v1",
+      "identity": {
+        "tagline": "MOVE WITHOUT LIMITS",
+        "description": "A sharp wordmark. An expressive brush mark. Electric color. Shifft brings a sense of movement to every surface, from campaign imagery to everyday details.",
+        "audience": "People who move between sport, the city and the outdoors.",
+        "locale": "en",
+        "website": "",
+        "name": "SHIFFT",
+        "cover_asset_id": "33333333-3333-4333-8333-333333333333"
+      },
+      "chapters": {
+        "logo": {
+          "enabled": true,
+          "introduction": "One name. A mark made for movement.",
+          "instructions": "Use the exact supplied Shifft wordmark and brush symbol. The black and white artwork comes from Figma; never redraw, recolor or distort it. Clear-space and minimum-size values below are proposed web defaults awaiting owner review.",
+          "provenance": "proposed",
+          "source_asset_ids": [],
+          "prompts": [
+            {
+              "inputs": [
+                "application",
+                "background"
+              ],
+              "reference_asset_ids": [],
+              "id": "next-use",
+              "title": "Place the brand mark",
+              "purpose": "Choose the right variant and preserve the artwork.",
+              "template": "Place the supplied logo in {{application}} on {{background}}. Select the appropriate approved variant, preserve its proportions and apply the saved clear-space and minimum-size rules. Do not redraw the logo."
+            }
+          ],
+          "variants": [
+            {
+              "asset_id": "11111111-1111-4111-8111-111111111111",
+              "label": "Black wordmark",
+              "role": "primary",
+              "background": "light"
+            },
+            {
+              "asset_id": "22222222-2222-4222-8222-222222222222",
+              "label": "White wordmark",
+              "role": "light",
+              "background": "dark"
+            },
+            {
+              "asset_id": "44444444-4444-4444-8444-444444444444",
+              "label": "Black brush symbol",
+              "role": "symbol",
+              "background": "light"
+            },
+            {
+              "asset_id": "55555555-5555-4555-8555-555555555555",
+              "label": "White brush symbol",
+              "role": "symbol",
+              "background": "dark"
+            }
+          ],
+          "clear_space": "Proposed: leave at least half the symbol height around the artwork.",
+          "minimum_size": "Proposed web defaults: wordmark at least 120px wide; symbol at least 32px wide.",
+          "avoid": [
+            "Never replace the supplied wordmark with typeset text.",
+            "Do not redraw, stretch, rotate, recolor or add effects.",
+            "Keep small marks clear of busy photographic detail."
+          ],
+          "moodboard": [],
+          "references": [
+            {
+              "label": "Shifft logo artwork",
+              "url": "https://www.figma.com/design/SzFcirw1HfSCoQPKNjBz5d?node-id=181-234",
+              "embed": true
+            }
+          ]
+        },
+        "tone_of_voice": {
+          "enabled": true,
+          "introduction": "Direct. Energetic. Ready to move.\nProposed voice guidance, inspired by the supplied campaign.",
+          "instructions": "Proposed voice: use short, active sentences and familiar words. Let MOVE WITHOUT LIMITS set the rhythm. Be encouraging without judging the reader. Preserve verified facts; never invent fabric, sustainability, performance or product claims.",
+          "provenance": "proposed",
+          "source_asset_ids": [],
+          "prompts": [
+            {
+              "inputs": [
+                "source_copy",
+                "audience",
+                "channel"
+              ],
+              "reference_asset_ids": [],
+              "id": "next-use",
+              "title": "Write in our voice",
+              "purpose": "Turn source copy into a clear, useful message.",
+              "template": "Rewrite {{source_copy}} for {{audience}} on {{channel}}. Keep the factual meaning, follow the saved voice principles and preferred terms, and avoid unsupported claims. Return one concise version and describe any factual gaps."
+            }
+          ],
+          "principles": [
+            {
+              "title": "Lead with a verb.",
+              "description": "Move. Explore. Go. Give the line a clear sense of direction."
+            },
+            {
+              "title": "Keep the energy human.",
+              "description": "Invite people in. Leave room for different paces and ambitions."
+            },
+            {
+              "title": "Make every claim count.",
+              "description": "Use verified product facts. When details are missing, ask for them."
+            }
+          ],
+          "preferred_terms": [
+            "move",
+            "explore",
+            "your next step"
+          ],
+          "avoid_terms": [
+            "best in class",
+            "unstoppable performance",
+            "guaranteed results"
+          ],
+          "examples": [
+            {
+              "label": "Campaign headline",
+              "before": "Next-generation innovation for the ultimate athletic experience.",
+              "after": "MOVE WITHOUT LIMITS"
+            },
+            {
+              "label": "Social invitation · proposed",
+              "before": "Push harder. No excuses. No limits.",
+              "after": "A new route. Your own pace."
+            }
+          ],
+          "moodboard": [
+            {
+              "asset_id": "33333333-3333-4333-8333-333333333333",
+              "caption": "Human energy · supplied campaign photograph"
+            },
+            {
+              "asset_id": "88888888-8888-4888-8888-888888888888",
+              "caption": "Expressive forms · supplied shoe artwork"
+            },
+            {
+              "asset_id": "44444444-4444-4444-8444-444444444444",
+              "caption": "The Shifft brush symbol · supplied identity"
+            }
+          ],
+          "references": [
+            {
+              "label": "Campaign mood and headline",
+              "url": "https://www.figma.com/design/SzFcirw1HfSCoQPKNjBz5d?node-id=186-2706",
+              "embed": true
+            }
+          ]
+        },
+        "typography": {
+          "enabled": true,
+          "introduction": "Inter Black Italic carries the momentum.\nInter regular keeps the details clear.",
+          "instructions": "See MOVE WITHOUT LIMITS and ENGINEERED TO MOVE for Inter Black Italic (900). The live display class uses tight tracking (−0.028em), a line height of 0.8 and responsive sizes. Read the mission copy in upright Inter for the body role. This guide’s specimen sizes are proposals for other surfaces.",
+          "provenance": "proposed",
+          "source_asset_ids": [],
+          "prompts": [
+            {
+              "inputs": [
+                "surface"
+              ],
+              "reference_asset_ids": [],
+              "id": "next-use",
+              "title": "Set the type",
+              "purpose": "Apply a consistent hierarchy to a new surface.",
+              "template": "Set typography for {{surface}} using Inter Black Italic (900, true italic) for display and the saved normal body role. Apply the saved proposed web scale, line heights and tracking; adapt sizes responsively. Preserve actual italic font files and embedding permissions. Call out proposed rules that need owner review."
+            }
+          ],
+          "fonts": [
+            {
+              "role": "display",
+              "family": "Inter",
+              "weights": [
+                900
+              ],
+              "style": "italic",
+              "fallback": "sans-serif",
+              "asset_id": "66666666-6666-4666-8666-666666666666",
+              "source_url": "https://rsms.me/inter/"
+            },
+            {
+              "role": "body",
+              "family": "Inter",
+              "weights": [
+                400,
+                600
+              ],
+              "style": "normal",
+              "fallback": "sans-serif",
+              "asset_id": "77777777-7777-4777-8777-777777777777",
+              "source_url": "https://rsms.me/inter/"
+            }
+          ],
+          "styles": [
+            {
+              "name": "Display · proposed web size",
+              "role": "display",
+              "size": 108,
+              "line_height": 0.9,
+              "weight": 900,
+              "tracking": -0.02
+            },
+            {
+              "name": "Heading",
+              "role": "display",
+              "size": 60,
+              "line_height": 0.95,
+              "weight": 900,
+              "tracking": -0.02
+            },
+            {
+              "name": "Subheading",
+              "role": "display",
+              "size": 38,
+              "line_height": 1.05,
+              "weight": 900,
+              "tracking": -0.02
+            },
+            {
+              "name": "Body",
+              "role": "body",
+              "size": 18,
+              "line_height": 1.55,
+              "weight": 400,
+              "tracking": 0
+            },
+            {
+              "name": "Caption",
+              "role": "body",
+              "size": 12,
+              "line_height": 1.4,
+              "weight": 400,
+              "tracking": 0
+            }
+          ],
+          "moodboard": [],
+          "references": [
+            {
+              "label": "Display typography source",
+              "url": "https://www.figma.com/design/SzFcirw1HfSCoQPKNjBz5d?node-id=182-981",
+              "embed": true
+            }
+          ]
+        },
+        "spacing": {
+          "enabled": true,
+          "introduction": "Give the type space. Let imagery fill the frame.\nA proposed web scale for a consistent first release.",
+          "instructions": "This spacing scale is proposed for the demo. Choose gaps from 4, 8, 16, 24, 32, 48, 64 and 96px. Use a single page gutter, generous section gaps and a clear alignment line. Reduce the gutter to 20px on small screens. Avoid repeated nested padding.",
+          "provenance": "proposed",
+          "source_asset_ids": [],
+          "prompts": [
+            {
+              "inputs": [
+                "layout",
+                "viewports"
+              ],
+              "reference_asset_ids": [],
+              "id": "next-use",
+              "title": "Compose the layout",
+              "purpose": "Use the shared scale for a calm, readable layout.",
+              "template": "Compose {{layout}} for {{viewports}} using the saved spacing scale, container width, page gutter, section spacing and content gap. Return the layout values and explain which scale steps serve each relationship."
+            }
+          ],
+          "steps": [
+            {
+              "name": "Space 01",
+              "value": 4
+            },
+            {
+              "name": "Space 02",
+              "value": 8
+            },
+            {
+              "name": "Space 03",
+              "value": 16
+            },
+            {
+              "name": "Space 04",
+              "value": 24
+            },
+            {
+              "name": "Space 05",
+              "value": 32
+            },
+            {
+              "name": "Space 06",
+              "value": 48
+            },
+            {
+              "name": "Space 07",
+              "value": 64
+            },
+            {
+              "name": "Space 08",
+              "value": 96
+            }
+          ],
+          "container_width": 1440,
+          "page_gutter": 64,
+          "section_spacing": 96,
+          "content_gap": 32,
+          "moodboard": [],
+          "references": []
+        },
+        "colors": {
+          "enabled": true,
+          "introduction": "Electric blue and a palette with room to play.",
+          "instructions": "Set product cutouts on cyan and blush. Keep paper and dark neutral surfaces for the scroll story. Carbon is a proposed web surface for the header and collection.",
+          "provenance": "extracted",
+          "source_asset_ids": [],
+          "prompts": [
+            {
+              "inputs": [
+                "surface",
+                "text_size"
+              ],
+              "reference_asset_ids": [],
+              "id": "next-use",
+              "title": "Choose a color pairing",
+              "purpose": "Use the palette with readable contrast.",
+              "template": "Choose palette roles and an approved text/background pairing for {{surface}}. Use exact saved hex values, keep text contrast suitable for {{text_size}}, and explain where the accent is used. Do not invent additional colors."
+            }
+          ],
+          "palette": [
+            {
+              "name": "Navy",
+              "value": "#202B49",
+              "role": "text"
+            },
+            {
+              "name": "Cyan",
+              "value": "#68EBF5",
+              "role": "accent"
+            },
+            {
+              "name": "Blush",
+              "value": "#FFD1CE",
+              "role": "surface"
+            },
+            {
+              "name": "Paper",
+              "value": "#F5F5F5",
+              "role": "background"
+            },
+            {
+              "name": "Lilac",
+              "value": "#AB9AE2",
+              "role": "accent"
+            },
+            {
+              "name": "Coral",
+              "value": "#FF786F",
+              "role": "accent"
+            },
+            {
+              "name": "Electric",
+              "value": "#3C00FF",
+              "role": "primary"
+            },
+            {
+              "name": "Carbon",
+              "value": "#0B0B0B",
+              "role": "surface"
+            },
+            {
+              "name": "Mist",
+              "value": "#D5D7DB",
+              "role": "border"
+            }
+          ],
+          "pairings": [
+            {
+              "foreground": "Navy",
+              "background": "Paper",
+              "usage": "body"
+            },
+            {
+              "foreground": "Paper",
+              "background": "Electric",
+              "usage": "body"
+            },
+            {
+              "foreground": "Navy",
+              "background": "Blush",
+              "usage": "body"
+            },
+            {
+              "foreground": "Navy",
+              "background": "Cyan",
+              "usage": "body"
+            }
+          ],
+          "moodboard": [],
+          "references": [
+            {
+              "label": "Shifft palette",
+              "url": "https://www.figma.com/design/SzFcirw1HfSCoQPKNjBz5d?node-id=182-877",
+              "embed": true
+            }
+          ]
+        },
+        "visuals": {
+          "enabled": true,
+          "introduction": "Expressive marks. Strong crops. Human energy.",
+          "instructions": "Preserve the campaign crops, shoe silhouette and licensed wordmark. Use the original brush plate for the scroll reveal. The shader treatment and the sequence of shoe, tee and full look are web proposals. Keep the static brush and complete product pictures readable with reduced motion. The supplied artwork is approved for presenting this example.",
+          "provenance": "proposed",
+          "source_asset_ids": [],
+          "prompts": [
+            {
+              "inputs": [
+                "subject",
+                "use",
+                "aspect_ratio"
+              ],
+              "reference_asset_ids": [],
+              "id": "next-use",
+              "title": "Create a visual candidate",
+              "purpose": "Start the next generation from the saved art direction.",
+              "template": "Create a new editorial image of {{subject}} for {{use}} in {{aspect_ratio}}. Use strong directional light, a clear focal point and space for an Inter Black Italic headline. Work with the approved Shifft palette. Generate no logos, brand names or performance claims. Use text direction only; supplied brand images are not authorized model inputs. Return as a candidate for owner review."
+            }
+          ],
+          "images": [
+            {
+              "asset_id": "33333333-3333-4333-8333-333333333333",
+              "caption": "Supplied Shifft campaign photograph · Figma 186:2811",
+              "role": "approved"
+            },
+            {
+              "asset_id": "88888888-8888-4888-8888-888888888888",
+              "caption": "Supplied shoe artwork used in the New Arrivals frame, Figma 189:206.",
+              "role": "approved"
+            }
+          ],
+          "direction": "Strong natural light, a clear subject and deliberate negative space. Mix clean editorial photography with the energy of expressive brush forms. Let electric blue or one supporting palette color carry the composition.",
+          "avoid": [
+            "Do not generate or imitate the official logo.",
+            "Do not upload supplied photographs or artwork to a generator without separate permission.",
+            "Avoid invented technical product claims or copying a person from the reference."
+          ],
+          "brief": "Create a new editorial image of {{subject}} for {{use}} in {{aspect_ratio}}. Use strong directional light, a clear focal point and space for an Inter Black Italic headline. Work with the approved Shifft palette. Generate no logos, brand names or performance claims. Use text direction only; supplied brand images are not authorized model inputs. Return as a candidate for owner review.",
+          "moodboard": [],
+          "references": [
+            {
+              "label": "Campaign art direction",
+              "url": "https://www.figma.com/design/SzFcirw1HfSCoQPKNjBz5d?node-id=186-2706",
+              "embed": true
+            }
+          ],
+          "icons": "Draw control icons on a 24px grid with rounded 2px strokes. Use light icons on dark controls and dark icons when a control switches to cyan. In New Arrivals, left and right arrows move between looks. On Our story, the down-right arrow points to the print editorial. Keep text labels or accessible names on the controls. The original brush arrow belongs to the campaign hero.",
+          "usage_examples": [
+            {
+              "kind": "use",
+              "title": "Carousel navigation",
+              "instruction": "Use left and right arrows for the previous and next looks.",
+              "reason": "Each arrow follows the direction of the browsable collection.",
+              "asset_id": "28b64bd3-a932-48b5-b9ed-e2e9e5402788"
+            },
+            {
+              "kind": "use",
+              "title": "Editorial link",
+              "instruction": "Use a down-right arrow on Our story to point to the next editorial section.",
+              "reason": "The label names the action and the arrow signals a link farther down the page.",
+              "asset_id": "824b8f41-1dcd-4f2c-b8d3-e2bf9bf7be56"
+            }
+          ],
+          "photography": "Use the shared media radius on product card images and editorial photo panels."
+        },
+        "social_media": {
+          "enabled": true,
+          "introduction": "A clear message. A confident crop. Room to move.\nProposed sample posts and canvas sizes for review.",
+          "instructions": "Draft social content from verified source copy. Apply the saved voice, Inter Black Italic display and palette. Choose a saved channel and format. Treat canvas dimensions as proposed design presets; verify destination requirements before final delivery. Use supplied images only for approved presentation; generation permission is separate. Leave account handles blank until confirmed. Never publish posts automatically.",
+          "provenance": "proposed",
+          "source_asset_ids": [],
+          "moodboard": [],
+          "references": [
+            {
+              "label": "Campaign layout starting point",
+              "url": "https://www.figma.com/design/SzFcirw1HfSCoQPKNjBz5d?node-id=186-2706",
+              "embed": true
+            }
+          ],
+          "channels": [
+            {
+              "name": "Instagram",
+              "handle": "",
+              "url": null
+            },
+            {
+              "name": "LinkedIn",
+              "handle": "",
+              "url": null
+            }
+          ],
+          "formats": [
+            {
+              "name": "Portrait post",
+              "channel": "Instagram",
+              "width": 1080,
+              "height": 1350,
+              "guidance": "Proposed 4:5 design canvas. Keep one focal point and a short headline with generous edge space."
+            },
+            {
+              "name": "Vertical story",
+              "channel": "Instagram",
+              "width": 1080,
+              "height": 1920,
+              "guidance": "Proposed 9:16 canvas. Keep important text away from edges and verify the destination interface before export."
+            },
+            {
+              "name": "Square post",
+              "channel": "LinkedIn",
+              "width": 1080,
+              "height": 1080,
+              "guidance": "Proposed square canvas. Use verified source facts in the accompanying caption."
+            }
+          ],
+          "principles": [
+            "Use one idea per post and an active, short headline.",
+            "Keep the logo separate from generated artwork.",
+            "Confirm handles, links, product claims and final crop before delivery."
+          ],
+          "examples": [
+            {
+              "label": "Campaign post · proposed layout",
+              "channel": "Instagram",
+              "format": "Portrait post",
+              "copy": "MOVE\nWITHOUT\nLIMITS",
+              "asset_id": "33333333-3333-4333-8333-333333333333"
+            },
+            {
+              "label": "Next step · proposed layout",
+              "channel": "Instagram",
+              "format": "Portrait post",
+              "copy": "YOUR\nNEXT\nSTEP.",
+              "asset_id": "88888888-8888-4888-8888-888888888888"
+            }
+          ],
+          "prompts": [
+            {
+              "id": "next-use",
+              "title": "Draft the next social post",
+              "purpose": "Create copy and a layout brief from the saved social guidance.",
+              "template": "Draft a Shifft post for {{channel}} using {{format}} and {{source_copy}}. Apply the saved tone, palette and Inter Black Italic display. Return a short headline, caption, alt text and layout brief. Preserve verified facts and flag missing claims, handles or links. Use only assets approved for the intended use; do not submit supplied imagery to a generator without generation permission. Keep the result as a draft for review.",
+              "inputs": [
+                "channel",
+                "format",
+                "source_copy"
+              ],
+              "reference_asset_ids": []
+            }
+          ]
+        }
+      },
+      "assets": {
+        "11111111-1111-4111-8111-111111111111": {
+          "name": "Black wordmark",
+          "role": "logo",
+          "chapter": "logo",
+          "caption": "",
+          "alt_text": "Shifft black wordmark",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": false,
+          "license_url": "",
+          "provenance": "supplied"
+        },
+        "22222222-2222-4222-8222-222222222222": {
+          "name": "White wordmark",
+          "role": "logo",
+          "chapter": "logo",
+          "caption": "",
+          "alt_text": "Shifft white wordmark",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": false,
+          "license_url": "",
+          "provenance": "supplied"
+        },
+        "33333333-3333-4333-8333-333333333333": {
+          "name": "Campaign photograph",
+          "role": "image",
+          "chapter": "visuals",
+          "caption": "",
+          "alt_text": "Model wearing a white shirt with an electric blue Shifft brush graphic.",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": false,
+          "license_url": "",
+          "provenance": "supplied"
+        },
+        "44444444-4444-4444-8444-444444444444": {
+          "name": "Black brush symbol",
+          "role": "logo",
+          "chapter": "logo",
+          "caption": "",
+          "alt_text": "Shifft black brush symbol",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": false,
+          "license_url": "",
+          "provenance": "supplied"
+        },
+        "55555555-5555-4555-8555-555555555555": {
+          "name": "White brush symbol",
+          "role": "logo",
+          "chapter": "logo",
+          "caption": "",
+          "alt_text": "Shifft white brush symbol",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": false,
+          "license_url": "",
+          "provenance": "supplied"
+        },
+        "66666666-6666-4666-8666-666666666666": {
+          "name": "Inter variable italic",
+          "role": "font",
+          "chapter": "typography",
+          "caption": "",
+          "alt_text": "Inter true italic font, used at Black weight 900.",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": true,
+          "license_url": "https://raw.githubusercontent.com/rsms/inter/master/LICENSE.txt",
+          "provenance": "supplied"
+        },
+        "77777777-7777-4777-8777-777777777777": {
+          "name": "Inter variable regular",
+          "role": "font",
+          "chapter": "typography",
+          "caption": "",
+          "alt_text": "Inter normal font for readable body text.",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": true,
+          "license_url": "https://raw.githubusercontent.com/rsms/inter/master/LICENSE.txt",
+          "provenance": "supplied"
+        },
+        "88888888-8888-4888-8888-888888888888": {
+          "name": "Shoe artwork",
+          "role": "image",
+          "chapter": "visuals",
+          "caption": "",
+          "alt_text": "White and black Shifft shoe with expressive brush graphics.",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": false,
+          "license_url": "",
+          "provenance": "supplied"
+        },
+        "727a0e19-c157-480d-95c8-5a13e4f32bc1": {
+          "name": "Arrow left",
+          "role": "image",
+          "category": "icon",
+          "chapter": "visuals",
+          "caption": "Previous look in New Arrivals.",
+          "alt_text": "Arrow left",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": false,
+          "license_url": "",
+          "provenance": "proposed"
+        },
+        "28b64bd3-a932-48b5-b9ed-e2e9e5402788": {
+          "name": "Arrow right",
+          "role": "image",
+          "category": "icon",
+          "chapter": "visuals",
+          "caption": "Next look in New Arrivals.",
+          "alt_text": "Arrow right",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": false,
+          "license_url": "",
+          "provenance": "proposed"
+        },
+        "824b8f41-1dcd-4f2c-b8d3-e2bf9bf7be56": {
+          "name": "Arrow down-right",
+          "role": "image",
+          "category": "icon",
+          "chapter": "visuals",
+          "caption": "Our story link to From ink to fabric.",
+          "alt_text": "Arrow down-right",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": false,
+          "license_url": "",
+          "provenance": "proposed"
+        }
+      },
+      "design_system": {
+        "schema": "blockbite.design-system/v1",
+        "tokens": {
+          "Navy": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-ink"
+            },
+            "usage": "Text color for the store.",
+            "rationale": "Uses the value defined in the store theme.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Cyan": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-ice"
+            },
+            "usage": "Accent color for the store.",
+            "rationale": "Uses the value defined in the store theme.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Blush": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-blush"
+            },
+            "usage": "Surface color for the store.",
+            "rationale": "Uses the value defined in the store theme.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Paper": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-paper"
+            },
+            "usage": "Background color for the store.",
+            "rationale": "Uses the value defined in the store theme.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Lilac": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-lilac"
+            },
+            "usage": "Accent color for the store.",
+            "rationale": "Uses the value defined in the store theme.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Coral": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-coral"
+            },
+            "usage": "Accent color for the store.",
+            "rationale": "Uses the value defined in the store theme.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Carbon": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-carbon"
+            },
+            "usage": "Collection and navigation surfaces.",
+            "rationale": "Provides the unbroken dark canvas around editorial product imagery.",
+            "provenance": "proposed",
+            "status": "proposed"
+          },
+          "Electric": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-electric"
+            },
+            "usage": "Primary color for the store.",
+            "rationale": "Uses the value defined in the store theme.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Display": {
+            "kind": "font",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--font-display"
+            },
+            "usage": "Campaign headlines and editorial section titles.",
+            "rationale": "The title uses the bundled Inter variable italic at weight 900.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Body": {
+            "kind": "font",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--font-sans"
+            },
+            "usage": "Body copy, product metadata and navigation.",
+            "rationale": "The bundled upright Inter keeps longer copy and controls legible.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "ActionRadius": {
+            "kind": "radius",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--radius-action"
+            },
+            "usage": "Pill buttons, swatches and circular icon controls.",
+            "rationale": "The same full radius keeps action silhouettes consistent.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Mist": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-muted"
+            },
+            "usage": "Muted backgrounds and subtle separators in new catalogue sections.",
+            "rationale": "A light neutral made from Paper and Navy. Navy text stays readable on the muted surface.",
+            "provenance": "proposed",
+            "status": "proposed"
+          },
+          "MediaRadius": {
+            "kind": "radius",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--radius-media"
+            },
+            "usage": "Product card media, gallery frames and editorial photo panels.",
+            "rationale": "A common corner radius ties the product and editorial imagery together.",
+            "provenance": "proposed",
+            "status": "proposed"
+          }
+        },
+        "components": {},
+        "roles": {}
+      }
+    },
+    "assets": [
+      {
+        "name": "Black wordmark",
+        "role": "logo",
+        "chapter": "logo",
+        "caption": "",
+        "alt_text": "Shifft black wordmark",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": false,
+        "license_url": "",
+        "provenance": "supplied",
+        "id": "11111111-1111-4111-8111-111111111111",
+        "original_filename": "shifft-wordmark.svg",
+        "kind": "image",
+        "mime_type": "image/svg+xml",
+        "byte_size": 2092,
+        "width": null,
+        "height": null,
+        "sha256": "454442db20b290d4ebbff8d2dbba8359d96e37b12ec6c6a2c120f5617e48e7af",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "White wordmark",
+        "role": "logo",
+        "chapter": "logo",
+        "caption": "",
+        "alt_text": "Shifft white wordmark",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": false,
+        "license_url": "",
+        "provenance": "supplied",
+        "id": "22222222-2222-4222-8222-222222222222",
+        "original_filename": "shifft-word.svg",
+        "kind": "image",
+        "mime_type": "image/svg+xml",
+        "byte_size": 2087,
+        "width": null,
+        "height": null,
+        "sha256": "ea77b2e5bf99dbb6de04b8ed8374c3b03af6b20a0a46abe928df320818e7d050",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Campaign photograph",
+        "role": "image",
+        "chapter": "visuals",
+        "caption": "",
+        "alt_text": "Model wearing a white shirt with an electric blue Shifft brush graphic.",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": false,
+        "license_url": "",
+        "provenance": "supplied",
+        "id": "33333333-3333-4333-8333-333333333333",
+        "original_filename": "shifft-hero.webp",
+        "kind": "image",
+        "mime_type": "image/webp",
+        "byte_size": 51016,
+        "width": 1448,
+        "height": 1086,
+        "sha256": "bbaccecc357d7d72164e93d8975a604327025d27bd88d37f75a2175a0c74e878",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Black brush symbol",
+        "role": "logo",
+        "chapter": "logo",
+        "caption": "",
+        "alt_text": "Shifft black brush symbol",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": false,
+        "license_url": "",
+        "provenance": "supplied",
+        "id": "44444444-4444-4444-8444-444444444444",
+        "original_filename": "shifft-symbol.png",
+        "kind": "image",
+        "mime_type": "image/png",
+        "byte_size": 209053,
+        "width": 1529,
+        "height": 1493,
+        "sha256": "f2e226881e2e976e2a766c7b1195a342bb7061c5754b4f766185bf1c7567d691",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "White brush symbol",
+        "role": "logo",
+        "chapter": "logo",
+        "caption": "",
+        "alt_text": "Shifft white brush symbol",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": false,
+        "license_url": "",
+        "provenance": "supplied",
+        "id": "55555555-5555-4555-8555-555555555555",
+        "original_filename": "shifft-mark.webp",
+        "kind": "image",
+        "mime_type": "image/webp",
+        "byte_size": 3800,
+        "width": 128,
+        "height": 125,
+        "sha256": "81877aaa03a88eb309c39c4c9a81faab95f093458cd4e67b8ad54037f2e12b11",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Inter variable italic",
+        "role": "font",
+        "chapter": "typography",
+        "caption": "",
+        "alt_text": "Inter true italic font, used at Black weight 900.",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": true,
+        "license_url": "https://raw.githubusercontent.com/rsms/inter/master/LICENSE.txt",
+        "provenance": "supplied",
+        "id": "66666666-6666-4666-8666-666666666666",
+        "original_filename": "inter-variable-italic.woff2",
+        "kind": "font",
+        "mime_type": "font/woff2",
+        "byte_size": 387976,
+        "width": null,
+        "height": null,
+        "sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Inter variable regular",
+        "role": "font",
+        "chapter": "typography",
+        "caption": "",
+        "alt_text": "Inter normal font for readable body text.",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": true,
+        "license_url": "https://raw.githubusercontent.com/rsms/inter/master/LICENSE.txt",
+        "provenance": "supplied",
+        "id": "77777777-7777-4777-8777-777777777777",
+        "original_filename": "inter-variable.woff2",
+        "kind": "font",
+        "mime_type": "font/woff2",
+        "byte_size": 352240,
+        "width": null,
+        "height": null,
+        "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Shoe artwork",
+        "role": "image",
+        "chapter": "visuals",
+        "caption": "",
+        "alt_text": "White and black Shifft shoe with expressive brush graphics.",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": false,
+        "license_url": "",
+        "provenance": "supplied",
+        "id": "88888888-8888-4888-8888-888888888888",
+        "original_filename": "shifft-shoe.webp",
+        "kind": "image",
+        "mime_type": "image/webp",
+        "byte_size": 164704,
+        "width": 1302,
+        "height": 1208,
+        "sha256": "631515bce06649a0bdfd635baaa4367c47f2a7d03d56f803086dbb4d940d793d",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Arrow left",
+        "role": "image",
+        "category": "icon",
+        "chapter": "visuals",
+        "caption": "Previous look in New Arrivals.",
+        "alt_text": "Arrow left",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": false,
+        "license_url": "",
+        "provenance": "proposed",
+        "id": "727a0e19-c157-480d-95c8-5a13e4f32bc1",
+        "original_filename": "shifft-arrow-left.svg",
+        "kind": "image",
+        "mime_type": "image/svg+xml",
+        "byte_size": 201,
+        "width": 24,
+        "height": 24,
+        "sha256": "31b25d4717355fb70118dc209c6991767f68fd8f1ed8cb5370701d28d4b18cd0",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Arrow right",
+        "role": "image",
+        "category": "icon",
+        "chapter": "visuals",
+        "caption": "Next look in New Arrivals.",
+        "alt_text": "Arrow right",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": false,
+        "license_url": "",
+        "provenance": "proposed",
+        "id": "28b64bd3-a932-48b5-b9ed-e2e9e5402788",
+        "original_filename": "shifft-arrow-right.svg",
+        "kind": "image",
+        "mime_type": "image/svg+xml",
+        "byte_size": 202,
+        "width": 24,
+        "height": 24,
+        "sha256": "bfd98de859f536171d8847139ee6f7d2b837cf6f06cb67fec1841c8a752e86f4",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Arrow down-right",
+        "role": "image",
+        "category": "icon",
+        "chapter": "visuals",
+        "caption": "Our story link to From ink to fabric.",
+        "alt_text": "Arrow down-right",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": false,
+        "license_url": "",
+        "provenance": "proposed",
+        "id": "824b8f41-1dcd-4f2c-b8d3-e2bf9bf7be56",
+        "original_filename": "shifft-arrow-down-right.svg",
+        "kind": "image",
+        "mime_type": "image/svg+xml",
+        "byte_size": 208,
+        "width": 24,
+        "height": 24,
+        "sha256": "9445e99a1f9c434e4ef36f450bbaabe72d77df494f498a21d32919749170374a",
+        "preview_url": null,
+        "download_url": null
+      }
+    ],
+    "findings": {
+      "errors": [],
+      "warnings": []
+    },
+    "preview_url": null,
+    "page_url": null,
+    "example_url": ""
+  },
+  "files": [
+    {
+      "id": "11111111-1111-4111-8111-111111111111",
+      "filename": "11111111-1111-4111-8111-111111111111.svg",
+      "preview": null,
+      "mime": "image/svg+xml"
+    },
+    {
+      "id": "22222222-2222-4222-8222-222222222222",
+      "filename": "22222222-2222-4222-8222-222222222222.svg",
+      "preview": null,
+      "mime": "image/svg+xml"
+    },
+    {
+      "id": "33333333-3333-4333-8333-333333333333",
+      "filename": "33333333-3333-4333-8333-333333333333.webp",
+      "preview": null,
+      "mime": "image/webp"
+    },
+    {
+      "id": "44444444-4444-4444-8444-444444444444",
+      "filename": "44444444-4444-4444-8444-444444444444.png",
+      "preview": null,
+      "mime": "image/png"
+    },
+    {
+      "id": "55555555-5555-4555-8555-555555555555",
+      "filename": "55555555-5555-4555-8555-555555555555.webp",
+      "preview": null,
+      "mime": "image/webp"
+    },
+    {
+      "id": "66666666-6666-4666-8666-666666666666",
+      "filename": "66666666-6666-4666-8666-666666666666.woff2",
+      "preview": null,
+      "mime": "font/woff2"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777777",
+      "filename": "77777777-7777-4777-8777-777777777777.woff2",
+      "preview": null,
+      "mime": "font/woff2"
+    },
+    {
+      "id": "88888888-8888-4888-8888-888888888888",
+      "filename": "88888888-8888-4888-8888-888888888888.webp",
+      "preview": null,
+      "mime": "image/webp"
+    },
+    {
+      "id": "727a0e19-c157-480d-95c8-5a13e4f32bc1",
+      "filename": "727a0e19-c157-480d-95c8-5a13e4f32bc1.svg",
+      "preview": null,
+      "mime": "image/svg+xml"
+    },
+    {
+      "id": "28b64bd3-a932-48b5-b9ed-e2e9e5402788",
+      "filename": "28b64bd3-a932-48b5-b9ed-e2e9e5402788.svg",
+      "preview": null,
+      "mime": "image/svg+xml"
+    },
+    {
+      "id": "824b8f41-1dcd-4f2c-b8d3-e2bf9bf7be56",
+      "filename": "824b8f41-1dcd-4f2c-b8d3-e2bf9bf7be56.svg",
+      "preview": null,
+      "mime": "image/svg+xml"
+    }
+  ]
+}

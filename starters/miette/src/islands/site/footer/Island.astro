@@ -1,0 +1,21 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'site/footer'>;
+const { signatureEyebrow, signatureHeading, menuLabel, menuHref, houseLabel, houseHref, visitLabel, visitHref, brand, copyright } = Astro.props;
+---
+
+<footer class="bg-bordeaux py-12 px-page-gutter gap-12 text-base text-left w-full max-w-full flex flex-col items-stretch justify-start md:pt-20 md:pr-16 md:pb-8 md:pl-16">
+  <div class="gap-12 text-base text-left max-w-full flex flex-col items-stretch justify-start md:flex-row md:flex-wrap">
+    <div class="gap-6 text-base text-left max-w-full flex flex-col items-stretch justify-start md:w-[calc(50%_-_24px)] md:grow-0 md:shrink-0 md:basis-auto">
+      <p class="text-beurre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{signatureEyebrow}</p>
+      <h2 class="text-creme font-display font-normal text-title-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:text-section md:tracking-[-1.5px]">{signatureHeading}</h2>
+    </div>
+    <div class="gap-1 text-base text-left max-w-full flex flex-col items-start justify-start md:w-[calc(50%_-_24px)] md:grow-0 md:shrink-0 md:basis-auto md:items-end">
+      <a class="text-creme border-bordeaux font-medium py-[15px] px-6 text-label text-left w-fit max-w-full grow-0 shrink-0 basis-auto inline-flex min-w-0 whitespace-pre-wrap items-center justify-center transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 duration-(--duration-interaction) ease-interaction motion-reduce:transition-none hover:text-beurre hover:underline focus-visible:text-beurre focus-visible:underline active:text-beurre active:underline decoration-2 underline-offset-4 focus-visible:outline-beurre" href={menuHref}>{menuLabel}</a>
+      <a class="text-creme border-bordeaux font-medium py-[15px] px-6 text-label text-left w-fit max-w-full grow-0 shrink-0 basis-auto inline-flex min-w-0 whitespace-pre-wrap items-center justify-center transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 duration-(--duration-interaction) ease-interaction motion-reduce:transition-none hover:text-beurre hover:underline focus-visible:text-beurre focus-visible:underline active:text-beurre active:underline decoration-2 underline-offset-4 focus-visible:outline-beurre" href={houseHref}>{houseLabel}</a>
+      <a class="text-creme border-bordeaux font-medium py-[15px] px-6 text-label text-left w-fit max-w-full grow-0 shrink-0 basis-auto inline-flex min-w-0 whitespace-pre-wrap items-center justify-center transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 duration-(--duration-interaction) ease-interaction motion-reduce:transition-none hover:text-beurre hover:underline focus-visible:text-beurre focus-visible:underline active:text-beurre active:underline decoration-2 underline-offset-4 focus-visible:outline-beurre" href={visitHref}>{visitLabel}</a>
+    </div>
+  </div>
+  <h2 class="text-beurre font-display font-normal text-display text-left max-w-full block min-w-0 leading-[1.04] tracking-[-3px] whitespace-pre-wrap md:text-manifesto md:tracking-[-4px]">{brand}</h2>
+  <p class="text-creme text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{copyright}</p>
+</footer>

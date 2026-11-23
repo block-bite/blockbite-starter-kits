@@ -1,0 +1,21 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+import arrowRight from '../../../../brand/assets/28b64bd3-a932-48b5-b9ed-e2e9e5402788.svg?url';
+type Props = IslandProps<'site/footer'>;
+const { brand, brandAlt, brandHref, arrivalsLabel, arrivalsHref, storiesLabel, storiesHref, topLabel, topHref } = Astro.props;
+---
+
+<footer class="shifft-gutter flex flex-wrap items-center justify-between gap-8 bg-carbon py-10 text-white">
+  <a href={brandHref} class="inline-flex">
+    <img src={brand} alt={brandAlt} width="117" height="35" loading="lazy" class="h-9 w-auto object-contain md:h-12" />
+  </a>
+  <nav aria-label="Footer" class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium">
+    <a class="py-2 hover:underline" href={arrivalsHref}>{arrivalsLabel}</a>
+    <a class="py-2 hover:underline" href={storiesHref}>{storiesLabel}</a>
+    <a class="group inline-flex items-center gap-1.5 py-2 hover:underline" href={topHref}>
+      {topLabel}
+      <img src={arrowRight} width="16" height="16" alt=""
+        class="shrink-0 -rotate-90 invert motion-safe:transition-transform motion-safe:group-hover:-translate-y-0.5" />
+    </a>
+  </nav>
+</footer>

@@ -1,0 +1,32 @@
+version: 1
+fields:
+  signatureEyebrow:
+    type: string
+    label: Signature Eyebrow
+  signatureHeading:
+    type: string
+    label: Signature Heading
+  menuLabel:
+    type: string
+    label: Menu Label
+  menuHref:
+    type: link
+    label: Menu Href
+  houseLabel:
+    type: string
+    label: House Label
+  houseHref:
+    type: link
+    label: House Href
+  visitLabel:
+    type: string
+    label: Visit Label
+  visitHref:
+    type: link
+    label: Visit Href
+  brand:
+    type: string
+    label: Brand
+  copyright:
+    type: string
+    label: Copyright

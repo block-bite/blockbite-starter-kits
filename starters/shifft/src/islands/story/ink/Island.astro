@@ -1,0 +1,37 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+import arrowDownRight from '../../../../brand/assets/824b8f41-1dcd-4f2c-b8d3-e2bf9bf7be56.svg?url';
+
+type Props = IslandProps<'story/ink'>;
+const { heading, brushImage, note } = Astro.props;
+const {
+  missionLead, missionFollow, storyLabel, storyHref, avatarImage, signatureImage, signerName,
+} = Astro.props;
+---
+
+<section id="motion" class="min-h-dvh ink-story shifft-gutter bg-paper text-carbon" data-ink aria-labelledby="ink-title">
+  <div class="ink-poster">
+    <div class="ink-drawing" aria-hidden="true">
+      <img src={brushImage} alt="" width="960" height="338" class="ink-print object-contain" loading="lazy" decoding="async" />
+    </div>
+    <h2 id="ink-title" class="ink-title shifft-display relative whitespace-pre-line uppercase">{heading}</h2>
+    <p class="ink-note shifft-label relative">{note}</p>
+  </div>
+  <div class="ink-mission">
+    <p class="ink-lead">{missionLead}</p>
+    <p class="ink-follow">{missionFollow}</p>
+    <a href={storyHref} class="group ink-story-link shifft-pill">
+      {storyLabel}
+      <img src={arrowDownRight} width="16" height="16" alt=""
+        class="shrink-0 invert motion-safe:transition-transform motion-safe:group-hover:translate-x-0.5 motion-safe:group-hover:translate-y-0.5" />
+    </a>
+    <div class="ink-signoff">
+      <img src={avatarImage} alt="" width="384" height="384" class="ink-avatar" loading="lazy" decoding="async" />
+      <div>
+        <img src={signatureImage} alt="" width="480" height="109" class="ink-signature" loading="lazy" decoding="async" />
+        <p class="ink-signer">{signerName}</p>
+      </div>
+    </div>
+  </div>
+  <script src="./ink-motion.ts"></script>
+</section>

@@ -1,0 +1,33 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+
+type Props = IslandProps<'story/print'>;
+const {
+  heading, description,
+  artworkImage, artworkAlt, artworkCaption,
+  garmentImage, garmentAlt, garmentCaption,
+} = Astro.props;
+---
+
+<section id="print" class="min-h-dvh content-center shifft-gutter bg-white py-12 text-carbon sm:py-16 xl:py-20" aria-labelledby="print-heading">
+  <div class="mx-auto grid max-w-[94rem] grid-cols-2 items-stretch gap-x-2.5 gap-y-6 border-t border-carbon pt-5 sm:gap-x-4 md:grid-cols-[minmax(0,7fr)_minmax(0,5fr)] md:gap-x-7 md:gap-y-8 md:pt-7">
+    <header class="col-span-2 min-w-0 md:col-span-1">
+      <h2 id="print-heading" class="shifft-display whitespace-pre-line text-[clamp(3.25rem,7.7vw,8.15rem)] uppercase">{heading}</h2>
+      <p class="mt-5 max-w-[43ch] text-base leading-snug text-carbon/85 sm:mt-6 sm:text-lg">{description}</p>
+    </header>
+
+    <figure class="flex min-w-0 flex-col md:col-start-1 md:row-start-2">
+      <div class="relative aspect-[4/5] overflow-hidden rounded-media bg-ice md:aspect-[2.2]">
+        <img src={artworkImage} alt={artworkAlt} width="1600" height="1106" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover object-center" />
+      </div>
+      <figcaption class="mt-2.5 border-t border-carbon/25 pt-2 text-xs leading-snug font-semibold sm:text-sm">{artworkCaption}</figcaption>
+    </figure>
+
+    <figure class="flex min-w-0 flex-col md:col-start-2 md:row-span-2 md:row-start-1">
+      <div class="relative aspect-[4/5] grow overflow-hidden rounded-media bg-paper md:aspect-auto">
+        <img src={garmentImage} alt={garmentAlt} width="1122" height="1402" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-contain p-[7%] md:p-[8%]" />
+      </div>
+      <figcaption class="mt-2.5 border-t border-carbon/25 pt-2 text-xs leading-snug font-semibold sm:text-sm">{garmentCaption}</figcaption>
+    </figure>
+  </div>
+</section>

@@ -1,0 +1,11 @@
+version: 1
+fields:
+  firstMessage:
+    type: string
+    label: First message
+  secondMessage:
+    type: string
+    label: Second message
+  thirdMessage:
+    type: string
+    label: Third message

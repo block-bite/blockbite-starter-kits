@@ -1,0 +1,32 @@
+---
+import { getEntry } from 'astro:content';
+import Header from '../islands/site/header/Island.astro';
+import Footer from '../islands/site/footer/Island.astro';
+import '../styles/theme.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const shared = await getEntry('pages', 'shared');
+if (!shared) throw new Error('Missing shared SHIFFT content.');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#080808" />
+    <title>{title}</title>
+  </head>
+  <body id="top" class="m-0 bg-carbon font-sans text-white antialiased">
+    <a href="#content" class="sr-only fixed left-4 top-4 z-50 bg-white p-3 text-black focus:not-sr-only">Skip to content</a>
+    <slot name="header"><Header {...shared.data.sections[0].fields} /></slot>
+    <main id="content"><slot /></main>
+    <slot name="footer"><Footer {...shared.data.sections[1].fields} /></slot>
+  </body>
+</html>

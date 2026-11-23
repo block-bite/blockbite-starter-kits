@@ -1,0 +1,12 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'invitation/visit'>;
+const { eyebrow, heading, body, action, actionHref } = Astro.props;
+---
+
+<section class="bg-rose py-12 px-page-gutter gap-6 text-base text-left w-full max-w-full flex flex-col items-center justify-start md:py-20 md:px-16">
+  <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{eyebrow}</p>
+  <h2 class="text-bordeaux font-display font-normal text-title-mobile text-center max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:text-invitation md:tracking-[-1.5px]">{heading}</h2>
+  <p class="text-encre text-base text-center max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{body}</p>
+  <a class="bg-bordeaux text-beurre border-bordeaux border-1 rounded-button hover:bg-encre hover:border-encre focus-visible:outline-bordeaux font-medium py-3.5 px-6 text-label text-center w-fit max-w-full grow-0 shrink-0 basis-auto inline-flex min-w-0 whitespace-pre-wrap items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 motion-reduce:transition-none transition duration-(--duration-interaction) ease-interaction motion-safe:hover:-translate-y-interaction-lift motion-safe:focus-visible:-translate-y-interaction-lift motion-safe:active:translate-y-0 focus-visible:bg-encre focus-visible:border-encre active:bg-encre active:border-encre" href={actionHref}>{action}</a>
+</section>

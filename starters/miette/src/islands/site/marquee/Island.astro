@@ -1,0 +1,15 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'site/marquee'>;
+const { firstMessage, secondMessage, thirdMessage } = Astro.props;
+---
+
+<section class="bg-beurre px-page-gutter py-6 md:px-16">
+  <div class="mx-auto flex w-full min-w-0 max-w-site flex-col items-center justify-center gap-3 text-center lg:flex-row lg:gap-6">
+    <p class="w-full max-w-full text-eyebrow font-medium leading-relaxed tracking-widest text-bordeaux lg:w-auto lg:text-body">{firstMessage}</p>
+    <span class="hidden text-bordeaux lg:block" aria-hidden="true">✳</span>
+    <p class="w-full max-w-full text-eyebrow font-medium leading-relaxed tracking-widest text-bordeaux lg:w-auto lg:text-body">{secondMessage}</p>
+    <span class="hidden text-bordeaux lg:block" aria-hidden="true">✳</span>
+    <p class="w-full max-w-full text-eyebrow font-medium leading-relaxed tracking-widest text-bordeaux lg:w-auto lg:text-body">{thirdMessage}</p>
+  </div>
+</section>

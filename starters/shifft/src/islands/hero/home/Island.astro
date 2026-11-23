@@ -1,0 +1,29 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+
+type Props = IslandProps<'hero/home'>;
+const { season, heading, image, imageAlt, stripeImage, actionLabel, actionHref, arrowImage } = Astro.props;
+---
+
+<section id="campaign" class="min-h-dvh campaign relative isolate grid bg-electric text-white" aria-labelledby="campaign-title">
+  <div class="campaign-media">
+    <img src={image} alt={imageAlt} width="1448" height="1086" class="h-full w-full object-cover" fetchpriority="high" />
+    <video class="campaign-video absolute inset-0 h-full w-full object-cover" data-campaign-src="/videos/shifft-intro.mp4"
+      muted playsinline preload="none" aria-hidden="true"></video>
+  </div>
+  <div class="campaign-copy shifft-gutter flex min-w-0 flex-col items-start">
+    <p class="shifft-label campaign-season">{season}</p>
+    <div class="campaign-headline">
+      <h1 id="campaign-title" class="campaign-title shifft-display whitespace-pre-line uppercase">{heading}</h1>
+      <div class="campaign-stripe" aria-hidden="true">
+        <img src={stripeImage} alt="" width="961" height="339" decoding="async" />
+      </div>
+    </div>
+    <a href={actionHref} class="campaign-action shifft-pill inline-flex min-h-11 items-center justify-between gap-6 border border-white bg-electric px-5 py-2 text-sm font-semibold hover:bg-white hover:text-electric focus-visible:bg-white focus-visible:text-electric">
+      {actionLabel}
+      <img src={arrowImage} alt="" width="160" height="133" class="campaign-arrow" decoding="async" />
+    </a>
+  </div>
+  <script src="./campaign-video.ts"></script>
+  <script src="./campaign-stripe.ts"></script>
+</section>

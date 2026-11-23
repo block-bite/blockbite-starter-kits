@@ -1,0 +1,204 @@
+.collection-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: center;
+  gap: clamp(1.75rem, 4.8vh, 4rem);
+  padding-block: clamp(3rem, 8vh, 5.5rem);
+}
+
+.collection-controls[hidden] { display: none; }
+
+.collection-controls button {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid #fff9;
+  border-radius: var(--radius-action);
+  cursor: pointer;
+}
+
+.collection-controls button img,
+.collection-link img {
+  display: block;
+  flex: none;
+  filter: invert(1);
+}
+
+.collection-controls button:is(:hover, :focus-visible):enabled {
+  background: var(--color-ice);
+  border-color: var(--color-ice);
+  color: var(--color-carbon);
+}
+
+.collection-controls button:is(:hover, :focus-visible):enabled img {
+  filter: none;
+}
+
+.collection-controls button:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+
+.collection-frames {
+  --rail-gutter: clamp(1.125rem, 4vw, 4.5rem);
+  --rail-visible: 83%;
+  --rail-gap: .875rem;
+  display: flex;
+  gap: var(--rail-gap);
+  min-width: 0;
+  padding-inline: var(--rail-gutter);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-padding-inline: var(--rail-gutter);
+  scroll-snap-type: x mandatory;
+}
+
+.collection-frames::after {
+  content: '';
+  flex: 0 0 calc(100% - var(--rail-visible) - var(--rail-gap));
+}
+
+.collection-frames:focus-visible {
+  outline-offset: -3px;
+}
+
+.collection-frame {
+  flex: 0 0 var(--rail-visible);
+  min-width: 0;
+  border-radius: var(--radius-media, 1rem);
+  scroll-snap-align: start;
+}
+
+#trail-look {
+  --look-color: var(--color-ice);
+  --look-highlight: var(--color-lilac);
+}
+
+#tee-look {
+  --look-color: var(--color-blush);
+  --look-highlight: var(--color-ice);
+}
+
+#white-look {
+  --look-color: var(--color-paper);
+  --look-highlight: var(--color-coral);
+}
+
+.collection-frame:has(:focus-visible),
+.collection-frames:focus-visible > .collection-frame[data-active],
+.collection:has(.collection-controls :focus-visible) .collection-frame[data-active] {
+  --look-emphasis: 1;
+}
+
+@media (hover: hover) {
+  .collection-frame:hover { --look-emphasis: 1; }
+}
+
+.collection-media {
+  position: relative;
+  overflow: clip;
+  aspect-ratio: 1.1;
+  border-radius: inherit;
+  background-color: color-mix(in oklab, var(--look-highlight) calc(var(--look-emphasis, 0) * 100%), var(--look-color));
+}
+
+.collection-media img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.collection-cutout { object-fit: contain; padding: 7%; }
+.collection-portrait {
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: 50% 30%;
+  scale: calc(1 - var(--look-emphasis, 0) * .09);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .collection-media { transition: background-color .25s ease-out; }
+  .collection-media img { transition: scale .25s ease-out; }
+  .collection-cutout { scale: calc(1 + var(--look-emphasis, 0) * .05); }
+}
+
+.collection-caption {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  column-gap: 1rem;
+  padding-block: 0.875rem;
+  background: var(--color-carbon);
+  font-size: clamp(0.88rem, 1.6vw, 1.25rem);
+}
+
+.collection-caption h3 { font-weight: 700; letter-spacing: -0.025em; }
+.collection-caption p { font-size: 0.86em; color: #d3d3d3; }
+.collection-link {
+  grid-column: 1 / -1;
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+  min-height: 2.75rem;
+  width: fit-content;
+  font-size: 0.78em;
+  margin-top: .5rem;
+  padding-inline: 1rem;
+  border: 1px solid #fff9;
+  border-radius: var(--radius-action);
+}
+.collection-link:is(:hover, :focus-visible) {
+  border-color: currentColor;
+}
+
+@media (min-width: 54rem) {
+  .collection-frames {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1rem, 2.5vw, 2.5rem);
+    overflow: visible;
+  }
+
+  .collection-frames::after { display: none; }
+
+  .collection[data-collection-motion] { min-height: 212dvh; }
+
+  .collection[data-collection-motion] .collection-stage {
+    position: sticky;
+    inset-block-start: var(--shifft-nav-cover);
+    min-height: calc(100dvh - var(--shifft-nav-cover));
+    padding-block: 2.75rem 2rem;
+    overflow: clip;
+  }
+
+  .collection[data-collection-motion] .collection-frames {
+    perspective: 1050px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0;
+  }
+
+  .collection[data-collection-motion] .collection-frame {
+    grid-area: 1 / 1;
+    position: relative;
+    width: min(51vw, calc((100dvh - var(--shifft-nav-cover)) * .63), 44rem);
+    transform: translate3d(calc(var(--offset, 0) * 28vw), 0, calc(var(--distance, 0) * -170px))
+      rotateY(calc(var(--offset, 0) * -19deg));
+    opacity: clamp(0.15, 1 - var(--distance, 0) * 0.43, 1);
+  }
+
+  .collection[data-collection-motion] .collection-frame:not([data-active]) {
+    pointer-events: none;
+  }
+
+  .collection[data-collection-motion] .collection-frame:not([data-active]) .collection-caption {
+    visibility: hidden;
+  }
+}
+
+@media (width < 54rem) {
+  .collection:not([data-collection-rail]) .collection-frames {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    overflow: visible;
+    gap: 1.25rem;
+    scroll-snap-type: none;
+  }
+  .collection:not([data-collection-rail]) .collection-frames::after { display: none; }
+}

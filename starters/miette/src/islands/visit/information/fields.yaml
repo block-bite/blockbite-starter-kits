@@ -1,0 +1,38 @@
+version: 1
+fields:
+  adresseEyebrow:
+    type: string
+    label: Adresse Eyebrow
+  adresseHeading:
+    type: string
+    label: Adresse Heading
+  adresseBody:
+    type: string
+    label: Adresse Body
+  leRythmeEyebrow:
+    type: string
+    label: Le Rythme Eyebrow
+  leRythmeHeading:
+    type: string
+    label: Le Rythme Heading
+  leRythmeBody:
+    type: string
+    label: Le Rythme Body
+  lesQuestionsEyebrow:
+    type: string
+    label: Les Questions Eyebrow
+  lesQuestionsHeading:
+    type: string
+    label: Les Questions Heading
+  lesQuestionsAction:
+    type: string
+    label: Les Questions Action
+  lesQuestionsDetail:
+    type: string
+    label: Les Questions Detail
+  lesQuestionsActionNote:
+    type: string
+    label: Les Questions Action Note
+  lesQuestionsDetailNote:
+    type: string
+    label: Les Questions Detail Note

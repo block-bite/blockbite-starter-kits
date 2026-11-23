@@ -1,0 +1,21 @@
+---
+interface Props {
+  options: { label: string; category: string }[];
+}
+const { options } = Astro.props;
+---
+
+<miette-menu-filter class="flex flex-col gap-4">
+  <div class="flex flex-wrap gap-3" role="group" aria-label="Filtrer la carte">
+    {options.map(option => (
+      <button
+        type="button"
+        data-category={option.category}
+        aria-controls="menu-products"
+        aria-pressed={option.category === 'all' ? 'true' : 'false'}
+        class="rounded-button border border-bordeaux px-6 py-2.5 text-caption font-medium text-bordeaux hover:bg-beurre aria-pressed:bg-bordeaux aria-pressed:text-beurre focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux motion-reduce:transition-none transition duration-(--duration-interaction) ease-interaction focus-visible:bg-beurre active:bg-beurre aria-pressed:hover:bg-encre aria-pressed:focus-visible:bg-encre aria-pressed:active:bg-encre motion-safe:hover:-translate-y-interaction-lift motion-safe:focus-visible:-translate-y-interaction-lift motion-safe:active:translate-y-0"
+      >{option.label}</button>
+    ))}
+  </div>
+  <output class="text-caption text-bordeaux" aria-live="polite" aria-atomic="true">Notre sélection du moment</output>
+</miette-menu-filter>

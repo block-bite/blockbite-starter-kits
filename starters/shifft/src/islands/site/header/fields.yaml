@@ -1,0 +1,26 @@
+version: 1
+fields:
+  brand:
+    type: image
+    label: Wordmark
+  brandAlt:
+    type: string
+    label: Wordmark alternative text
+  brandHref:
+    type: link
+    label: Brand destination
+  symbol:
+    type: image
+    label: Brush mark
+  collectionLabel:
+    type: string
+    label: Collection label
+  collectionHref:
+    type: link
+    label: Collection destination
+  storyLabel:
+    type: string
+    label: Motion study label
+  storyHref:
+    type: link
+    label: Motion study destination

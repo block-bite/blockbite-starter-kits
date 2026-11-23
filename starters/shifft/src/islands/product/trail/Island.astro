@@ -1,0 +1,79 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+import arrowRight from '../../../../brand/assets/28b64bd3-a932-48b5-b9ed-e2e9e5402788.svg?url';
+
+type Props = IslandProps<'product/trail'>;
+const {
+  category, heading, image, imageAlt, price, description, colourLabel, colour,
+  blushColour, blushImage, blushImageAlt, zoomLabel, closeLabel,
+  studioLabel, boxImage, boxImageAlt, boxLabel, outsideImage, outsideImageAlt, outsideLabel,
+  sizeLabel, sizes, collectionLabel, collectionHref,
+} = Astro.props;
+---
+
+<section id="trail" class="min-h-dvh trail-product relative grid bg-ice text-carbon lg:grid-cols-[5fr_7fr]" aria-labelledby="trail-title">
+  <span id="trail-blush" class="trail-anchor" aria-hidden="true"></span>
+  <div class="shifft-gutter flex min-w-0 flex-col items-start justify-center py-11 lg:order-first lg:py-22 lg:pr-0">
+    <p class="shifft-label">{category}</p>
+    <h2 id="trail-title" class="shifft-display mt-6 whitespace-pre-line text-[clamp(3.3rem,8vw,8.5rem)] uppercase">{heading}</h2>
+    <p class="mt-6 text-xl font-bold">{price}</p>
+    <p class="mt-3 max-w-[24rem] text-base leading-relaxed">{description}</p>
+    <div class="mt-6 w-full max-w-[24rem] border-y border-carbon/35 py-3.5 text-sm">
+      <div role="group" aria-labelledby="trail-colour-label">
+        <p id="trail-colour-label" class="font-semibold">{colourLabel}</p>
+        <div class="trail-swatches">
+          <a class="trail-swatch trail-chalk-swatch" href="#trail">
+            <span class="trail-swatch-dot" aria-hidden="true"></span>{colour}
+          </a>
+          <a class="trail-swatch trail-blush-swatch" href="#trail-blush">
+            <span class="trail-swatch-dot" aria-hidden="true"></span>{blushColour}
+          </a>
+        </div>
+      </div>
+      <dl class="mt-3 flex flex-wrap items-baseline gap-x-5"><dt class="font-semibold">{sizeLabel}</dt><dd>{sizes}</dd></dl>
+    </div>
+    <a href={collectionHref} class="mt-6 inline-flex min-h-11 items-center gap-4 text-sm font-semibold underline underline-offset-4">
+      <img src={arrowRight} width="16" height="16" alt="" class="-rotate-90" />{collectionLabel}
+    </a>
+  </div>
+  <div class="trail-stage order-first min-w-0 lg:order-none">
+    <div class="trail-photos">
+      <div class="trail-photo trail-chalk-photo">
+        <img src={image} alt={imageAlt} width="1800" height="1671" loading="lazy" decoding="async" />
+      </div>
+      <div class="trail-photo trail-blush-photo">
+        <img src={blushImage} alt={blushImageAlt} width="1800" height="1671" loading="lazy" decoding="async" />
+      </div>
+      <div class="trail-photo trail-context-photo trail-box-photo">
+        <div class="trail-box-frame">
+          <img src={boxImage} alt={boxImageAlt} width="1448" height="1086" loading="lazy" decoding="async" />
+        </div>
+      </div>
+      <div class="trail-photo trail-context-photo trail-outside-photo">
+        <img src={outsideImage} alt={outsideImageAlt} width="1448" height="1086" loading="lazy" decoding="async" />
+      </div>
+    </div>
+    <button type="button" class="trail-zoom" aria-haspopup="dialog" aria-controls="trail-zoom-dialog" hidden>
+      <span class="trail-zoom-label"><span class="trail-control-icon" aria-hidden="true"></span>{zoomLabel}</span>
+    </button>
+    <div class="trail-thumbs" role="group" aria-label="Product views" hidden>
+      <button type="button" class="trail-thumb trail-studio-thumb" aria-pressed="true">
+        <span class="sr-only">{studioLabel}</span>
+      </button>
+      <button type="button" class="trail-thumb trail-box-thumb" aria-pressed="false">
+        <span class="sr-only">{boxLabel}</span>
+      </button>
+      <button type="button" class="trail-thumb trail-outside-thumb" aria-pressed="false">
+        <span class="sr-only">{outsideLabel}</span>
+      </button>
+    </div>
+  </div>
+  <dialog id="trail-zoom-dialog" class="trail-dialog" aria-labelledby="trail-title">
+    <div class="trail-dialog-bar">
+      <span class="trail-dialog-colour"></span>
+      <button type="button" class="trail-close"><span class="trail-control-icon" aria-hidden="true"></span>{closeLabel}</button>
+    </div>
+    <div class="trail-pan" tabindex="0" role="region" aria-label="Enlarged product image"></div>
+  </dialog>
+  <script src="./product.ts"></script>
+</section>

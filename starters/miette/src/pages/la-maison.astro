@@ -1,0 +1,15 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { getEntry } from 'astro:content';
+import StoryHouse from '../islands/story/house/Island.astro';
+import ValuesEssentials from '../islands/values/essentials/Island.astro';
+import InvitationMenu from '../islands/invitation/menu/Island.astro';
+const page = await getEntry('pages', 'maison');
+if (!page) throw new Error('Missing maison content.');
+---
+
+<SiteLayout title={page.data.title} description="Une maison de quartier, des gestes patients et le goût du travail bien fait.">
+  <StoryHouse {...page.data.sections[0].fields} />
+  <ValuesEssentials {...page.data.sections[1].fields} />
+  <InvitationMenu {...page.data.sections[2].fields} />
+</SiteLayout>

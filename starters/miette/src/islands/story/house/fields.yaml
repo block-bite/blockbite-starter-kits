@@ -1,0 +1,17 @@
+version: 1
+fields:
+  notreHistoireEyebrow:
+    type: string
+    label: Notre Histoire Eyebrow
+  notreHistoireHeading:
+    type: string
+    label: Notre Histoire Heading
+  notreHistoireBody:
+    type: string
+    label: Notre Histoire Body
+  image:
+    type: image
+    label: Image
+  imageAlt:
+    type: string
+    label: Image Alt

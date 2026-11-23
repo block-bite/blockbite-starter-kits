@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "template": "page",
+  "title": "La carte — Miette Club",
+  "sections": [
+    {
+      "island": "hero/menu",
+      "fields": {
+        "eyebrow": "LE BONHEUR, À LA CARTE",
+        "heading": "Choisir, c’est\nle plus difficile.",
+        "body": "Les recettes de toujours, les envies du moment.\nÀ savourer sur place ou à emporter. Prix indicatifs de notre concept.",
+        "filters": [
+          {
+            "label": "Tout",
+            "category": "all"
+          },
+          {
+            "label": "Viennoiseries",
+            "category": "viennoiseries"
+          },
+          {
+            "label": "Pâtisseries",
+            "category": "patisseries"
+          },
+          {
+            "label": "Pains",
+            "category": "pains"
+          },
+          {
+            "label": "Café",
+            "category": "cafe"
+          }
+        ]
+      }
+    },
+    {
+      "island": "menu/collection",
+      "fields": {
+        "products": [
+          {
+            "image": "/images/croissants.jpg",
+            "imageAlt": "Croissants dorés sur le comptoir d’une boulangerie.",
+            "eyebrow": "viennoiseries",
+            "heading": "Le croissant culte",
+            "description": "Pur beurre, feuilletage délicat, cœur aérien.",
+            "price": "2,80 €",
+            "detailsLabel": "Ingrédients & allergènes",
+            "details": "Blé, lait, œuf.",
+            "illustration": "",
+            "category": "viennoiseries"
+          },
+          {
+            "image": "/images/patisseries.jpg",
+            "imageAlt": "Tarte aux framboises décorée d’une rose en pâte d’amande.",
+            "eyebrow": "viennoiseries",
+            "heading": "Le pain au chocolat",
+            "description": "Deux barres de chocolat noir. Zéro compromis.",
+            "price": "3,20 €",
+            "detailsLabel": "Ingrédients & allergènes",
+            "details": "Blé, lait, œuf, soja.",
+            "illustration": "",
+            "category": "viennoiseries"
+          },
+          {
+            "image": "/images/patisseries.jpg",
+            "imageAlt": "Tarte aux framboises décorée d’une rose en pâte d’amande.",
+            "eyebrow": "viennoiseries",
+            "heading": "L’escargot pistache",
+            "description": "Crème de pistache, spirale croustillante.",
+            "price": "4,80 €",
+            "detailsLabel": "Ingrédients & allergènes",
+            "details": "Blé, lait, œuf, pistache.",
+            "illustration": "",
+            "category": "viennoiseries"
+          },
+          {
+            "image": "/images/patisseries.jpg",
+            "imageAlt": "Tarte aux framboises décorée d’une rose en pâte d’amande.",
+            "eyebrow": "patisseries",
+            "heading": "La framboise libre",
+            "description": "Framboises, vanille et fond de tarte croustillant.",
+            "price": "6,50 €",
+            "detailsLabel": "Ingrédients & allergènes",
+            "details": "Blé, lait, œuf, amande.",
+            "illustration": "",
+            "category": "patisseries"
+          },
+          {
+            "image": "/images/atelier.jpg",
+            "imageAlt": "Des mains roulent la pâte à croissant sur une table farinée.",
+            "eyebrow": "pains",
+            "heading": "Le pain de campagne",
+            "description": "Levain, croûte chantante, mie généreuse.",
+            "price": "7,00 €",
+            "detailsLabel": "Ingrédients & allergènes",
+            "details": "Blé, seigle.",
+            "illustration": "",
+            "category": "pains"
+          },
+          {
+            "image": "",
+            "imageAlt": "",
+            "eyebrow": "cafe",
+            "heading": "Le flat white",
+            "description": "Double espresso et lait délicatement texturé.",
+            "price": "4,50 €",
+            "detailsLabel": "Ingrédients & allergènes",
+            "details": "Lait. Option avoine disponible.",
+            "illustration": "café,\ns’il vous plaît.",
+            "category": "cafe"
+          }
+        ],
+        "note": "Une question sur un ingrédient ? Parlons-en au comptoir. Les recettes et prix présentés sont ceux de cette démonstration."
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+version: 1
+fields:
+  heading:
+    type: string
+    label: Collection heading
+  shoeName:
+    type: string
+    label: Shoe name
+    group: Trail shoe
+  shoePrice:
+    type: string
+    label: Shoe price
+    group: Trail shoe
+  shoeImage:
+    type: image
+    label: Shoe image
+    group: Trail shoe
+  shoeAlt:
+    type: string
+    label: Shoe image alternative text
+    group: Trail shoe
+  shoeLinkLabel:
+    type: string
+    label: Shoe link label
+    group: Trail shoe
+  shoeHref:
+    type: link
+    label: Shoe link destination
+    group: Trail shoe
+  teeName:
+    type: string
+    label: Tee name
+    group: Graphic tee
+  teePrice:
+    type: string
+    label: Tee price
+    group: Graphic tee
+  teeImage:
+    type: image
+    label: Tee image
+    group: Graphic tee
+  teeAlt:
+    type: string
+    label: Tee image alternative text
+    group: Graphic tee
+  lookName:
+    type: string
+    label: Editorial look name
+    group: Editorial look
+  lookDescription:
+    type: string
+    label: Editorial look description
+    group: Editorial look
+  lookImage:
+    type: image
+    label: Editorial look image
+    group: Editorial look
+  lookAlt:
+    type: string
+    label: Editorial look alternative text
+    group: Editorial look

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "starters": [
+    {
+      "id": "miette",
+      "name": "Miette Club",
+      "version": "1.0.0",
+      "directory": "starters/miette",
+      "description": "A French bakery with shared layouts, local photography, a Markdown journal and a complete project Brand Guide.",
+      "license": "MIT",
+      "runtime": "@blockbite/astro setup archive supplied by Desktop"
+    },
+    {
+      "id": "shifft",
+      "name": "SHIFFT",
+      "version": "0.1.0",
+      "directory": "starters/shifft",
+      "description": "A single-page activewear campaign with a brush reveal, an editable three-look collection and a trail shoe detail.",
+      "license": "MIT",
+      "runtime": "@blockbite/astro setup archive supplied by Desktop"
+    }
+  ]
+}

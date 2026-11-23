@@ -1,0 +1,29 @@
+version: 1
+fields:
+  heading:
+    type: string
+    label: Construction story heading
+  upperTitle:
+    type: string
+    label: Upper title
+  upperDescription:
+    type: string
+    label: Upper description
+  upperImage:
+    type: image
+    label: Upper close-up
+  upperAlt:
+    type: string
+    label: Upper image alternative text
+  soleTitle:
+    type: string
+    label: Outsole title
+  soleDescription:
+    type: string
+    label: Outsole description
+  soleImage:
+    type: image
+    label: Outsole close-up
+  soleAlt:
+    type: string
+    label: Outsole image alternative text

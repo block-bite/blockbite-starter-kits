@@ -1,0 +1,15 @@
+.site-header {
+  block-size: var(--shifft-nav-height, 4rem);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .site-header {
+    clip-path: inset(0 round 0);
+    transition: translate 240ms ease, clip-path 240ms ease;
+  }
+
+  .site-header[data-scrolled] {
+    clip-path: inset(0 .5rem round .75rem);
+    translate: 0 var(--shifft-nav-drop, .5rem);
+  }
+}

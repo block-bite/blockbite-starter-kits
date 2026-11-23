@@ -1,0 +1,56 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'site/header'> & { currentPath: string };
+const { logo, logoAlt, brand, brandHref, toggleLabel, closeLabel, menuEyebrow, menuSignature, contactHeading, contactLocation, contactNote, contactLabel, contactHref, menuLabel, menuHref, houseLabel, houseHref, journalLabel, journalHref, visitLabel, visitHref, currentPath } = Astro.props;
+---
+
+<header class="relative z-20 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 bg-creme px-page-gutter py-5 text-left md:gap-7 md:px-8 md:py-6 lg:px-16">
+  <a class="inline-flex min-w-0 w-fit max-w-full items-center text-bordeaux font-display font-normal text-brand-mobile leading-none tracking-[-1.3px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux md:text-brand transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none hover:text-encre focus-visible:text-encre active:text-bordeaux" href={brandHref} aria-current={currentPath === brandHref ? 'page' : undefined}><img src={logo} alt={logoAlt} width="28" height="28" class="mr-3 h-7 w-7 shrink-0" /><span>{brand}</span></a>
+  <nav class="hidden items-center justify-end gap-7 md:flex" aria-label="Navigation principale">
+    <a class="py-2 text-caption font-medium text-bordeaux underline-offset-4 decoration-2 transition-colors duration-(--duration-interaction) ease-interaction hover:text-encre hover:underline aria-[current=page]:underline focus-visible:text-encre focus-visible:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux active:text-encre motion-reduce:transition-none" href={menuHref} aria-current={currentPath === menuHref ? 'page' : undefined}>{menuLabel}</a>
+    <a class="py-2 text-caption font-medium text-bordeaux underline-offset-4 decoration-2 transition-colors duration-(--duration-interaction) ease-interaction hover:text-encre hover:underline aria-[current=page]:underline focus-visible:text-encre focus-visible:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux active:text-encre motion-reduce:transition-none" href={houseHref} aria-current={currentPath === houseHref ? 'page' : undefined}>{houseLabel}</a>
+    <a class="py-2 text-caption font-medium text-bordeaux underline-offset-4 decoration-2 transition-colors duration-(--duration-interaction) ease-interaction hover:text-encre hover:underline aria-[current=page]:underline focus-visible:text-encre focus-visible:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux active:text-encre motion-reduce:transition-none" href={journalHref} aria-current={currentPath === journalHref ? 'page' : undefined}>{journalLabel}</a>
+    <a class="py-2 text-caption font-medium text-bordeaux underline-offset-4 decoration-2 transition-colors duration-(--duration-interaction) ease-interaction hover:text-encre hover:underline aria-[current=page]:underline focus-visible:text-encre focus-visible:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux active:text-encre motion-reduce:transition-none" href={visitHref} aria-current={currentPath === visitHref ? 'page' : undefined}>{visitLabel}</a>
+  </nav>
+  <miette-navigation class="block md:hidden">
+    <button type="button" data-menu-open disabled aria-expanded="false" aria-controls="miette-mobile-menu" aria-haspopup="dialog" class="inline-flex h-12 w-12 items-center justify-center rounded-button border border-bordeaux text-bordeaux transition-colors duration-(--duration-interaction) ease-interaction hover:bg-bordeaux hover:text-beurre focus-visible:bg-bordeaux focus-visible:text-beurre focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux active:bg-encre active:text-beurre motion-reduce:transition-none md:hidden">
+      <span class="sr-only">{toggleLabel}</span>
+      <span aria-hidden="true" class="relative block size-5"><span class="absolute top-1 left-0 h-px w-5 rounded-button bg-current"></span><span class="absolute top-2.5 left-0 h-px w-5 rounded-button bg-current"></span><span class="absolute top-4 left-0 h-px w-5 rounded-button bg-current"></span></span>
+    </button>
+    <dialog id="miette-mobile-menu" aria-label={toggleLabel} class="fixed inset-0 m-0 h-dvh w-full max-h-none max-w-none overflow-x-hidden overflow-y-auto overscroll-contain border-0 bg-bordeaux p-0 text-creme backdrop:bg-bordeaux/40 md:hidden">
+      <div class="flex min-h-full flex-col px-page-gutter pt-5 pb-8">
+        <div class="flex shrink-0 items-center justify-between gap-4">
+          <a href={brandHref} class="inline-flex min-w-0 items-center font-display text-brand-mobile leading-none tracking-[-1.3px] transition-colors duration-(--duration-interaction) ease-interaction hover:text-beurre focus-visible:text-beurre focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-beurre active:text-rose motion-reduce:transition-none"><img src={logo} alt={logoAlt} width="28" height="28" class="mr-3 h-7 w-7 shrink-0" /><span>{brand}</span></a>
+          <button type="button" data-menu-close autofocus class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-button border border-creme/40 transition-colors duration-(--duration-interaction) ease-interaction hover:border-beurre hover:bg-beurre hover:text-bordeaux focus-visible:bg-beurre focus-visible:text-bordeaux focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-beurre active:bg-rose active:text-bordeaux motion-reduce:transition-none">
+            <span class="sr-only">{closeLabel}</span>
+            <span aria-hidden="true" class="relative block size-5"><span class="absolute top-1/2 left-0 h-px w-5 -translate-y-1/2 rotate-45 rounded-button bg-current"></span><span class="absolute top-1/2 left-0 h-px w-5 -translate-y-1/2 -rotate-45 rounded-button bg-current"></span></span>
+          </button>
+        </div>
+        <div class="flex flex-1 flex-col justify-center py-10">
+          <p class="mb-5 text-eyebrow font-medium tracking-[2px] text-beurre uppercase">{menuEyebrow}</p>
+          <nav aria-label="Navigation mobile" class="flex flex-col">
+            <a href={menuHref} aria-current={currentPath === menuHref ? 'page' : undefined} class="group flex min-h-16 items-baseline gap-4 border-b border-creme/20 py-4 transition-colors duration-(--duration-interaction) ease-interaction hover:text-beurre focus-visible:text-beurre focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-beurre active:text-rose motion-reduce:transition-none"><span aria-hidden="true" class="shrink-0 text-eyebrow tracking-wide text-beurre">01</span><span class="min-w-0 font-display text-feature leading-[1.1] tracking-[-0.7px] underline-offset-8 group-aria-[current=page]:underline min-[390px]:text-hero-mobile">{menuLabel}</span></a>
+            <a href={houseHref} aria-current={currentPath === houseHref ? 'page' : undefined} class="group flex min-h-16 items-baseline gap-4 border-b border-creme/20 py-4 transition-colors duration-(--duration-interaction) ease-interaction hover:text-beurre focus-visible:text-beurre focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-beurre active:text-rose motion-reduce:transition-none"><span aria-hidden="true" class="shrink-0 text-eyebrow tracking-wide text-beurre">02</span><span class="min-w-0 font-display text-feature leading-[1.1] tracking-[-0.7px] underline-offset-8 group-aria-[current=page]:underline min-[390px]:text-hero-mobile">{houseLabel}</span></a>
+            <a href={journalHref} aria-current={currentPath === journalHref ? 'page' : undefined} class="group flex min-h-16 items-baseline gap-4 border-b border-creme/20 py-4 transition-colors duration-(--duration-interaction) ease-interaction hover:text-beurre focus-visible:text-beurre focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-beurre active:text-rose motion-reduce:transition-none"><span aria-hidden="true" class="shrink-0 text-eyebrow tracking-wide text-beurre">03</span><span class="min-w-0 font-display text-feature leading-[1.1] tracking-[-0.7px] underline-offset-8 group-aria-[current=page]:underline min-[390px]:text-hero-mobile">{journalLabel}</span></a>
+            <a href={visitHref} aria-current={currentPath === visitHref ? 'page' : undefined} class="group flex min-h-16 items-baseline gap-4 border-b border-creme/20 py-4 transition-colors duration-(--duration-interaction) ease-interaction hover:text-beurre focus-visible:text-beurre focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-beurre active:text-rose motion-reduce:transition-none"><span aria-hidden="true" class="shrink-0 text-eyebrow tracking-wide text-beurre">04</span><span class="min-w-0 font-display text-feature leading-[1.1] tracking-[-0.7px] underline-offset-8 group-aria-[current=page]:underline min-[390px]:text-hero-mobile">{visitLabel}</span></a>
+          </nav>
+        </div>
+        <div class="grid shrink-0 gap-6 border-t border-beurre/40 pt-6">
+          <div class="grid gap-2">
+            <p class="text-eyebrow font-medium tracking-[2px] text-beurre uppercase">{contactHeading}</p>
+            <p class="text-intro">{contactLocation}</p>
+            <p class="text-caption text-rose">{contactNote}</p>
+            <a href={contactHref} class="mt-1 w-fit text-base underline underline-offset-4 transition-colors duration-(--duration-interaction) ease-interaction hover:text-beurre focus-visible:text-beurre focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-beurre active:text-rose motion-reduce:transition-none">{contactLabel}</a>
+          </div>
+          <p class="max-w-64 font-display text-card italic leading-tight text-beurre">{menuSignature}</p>
+        </div>
+      </div>
+    </dialog>
+  </miette-navigation>
+  <noscript>
+    <nav aria-label="Navigation mobile sans JavaScript" class="flex flex-col gap-4 py-4 text-bordeaux underline md:hidden">
+      <a href={menuHref}>{menuLabel}</a><a href={houseHref}>{houseLabel}</a><a href={journalHref}>{journalLabel}</a><a href={visitHref}>{visitLabel}</a>
+    </nav>
+  </noscript>
+  <script>import './navigation';</script>
+</header>

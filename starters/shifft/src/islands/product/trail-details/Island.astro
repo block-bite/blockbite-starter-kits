@@ -1,0 +1,29 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+
+type Props = IslandProps<'product/trail-details'>;
+const {
+  heading, upperTitle, upperDescription, upperImage, upperAlt,
+  soleTitle, soleDescription, soleImage, soleAlt,
+} = Astro.props;
+---
+
+<section id="trail-details" class="min-h-dvh content-center shifft-gutter bg-carbon py-12 text-paper sm:py-16 lg:py-20" aria-labelledby="trail-details-title">
+  <div class="grid items-start gap-x-5 gap-y-8 border-t border-white/35 pt-5 sm:grid-cols-[1.2fr_1fr] lg:grid-cols-[0.84fr_1.5fr_1fr] lg:gap-x-7 lg:pt-7">
+    <h2 id="trail-details-title" class="shifft-display max-w-[11ch] text-balance text-[clamp(2.8rem,4.5vw,5.25rem)] uppercase sm:col-span-2 lg:col-span-1 lg:pr-2">{heading}</h2>
+    <figure class="min-w-0">
+      <img src={upperImage} alt={upperAlt} width="1200" height="873" loading="lazy" decoding="async" class="block aspect-[1.65] w-full rounded-media bg-paper object-cover" />
+      <figcaption class="mt-3.5">
+        <h3 class="text-xl leading-tight font-bold tracking-tight lg:text-2xl">{upperTitle}</h3>
+        <p class="mt-1.5 max-w-[37ch] text-sm leading-relaxed text-paper/80">{upperDescription}</p>
+      </figcaption>
+    </figure>
+    <figure class="min-w-0">
+      <img src={soleImage} alt={soleAlt} width="1200" height="840" loading="lazy" decoding="async" class="block aspect-[1.65] w-full rounded-media bg-paper object-cover sm:aspect-[1.37] lg:aspect-[1.1]" />
+      <figcaption class="mt-3.5">
+        <h3 class="text-xl leading-tight font-bold tracking-tight lg:text-2xl">{soleTitle}</h3>
+        <p class="mt-1.5 max-w-[37ch] text-sm leading-relaxed text-paper/80">{soleDescription}</p>
+      </figcaption>
+    </figure>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+version: 1
+fields:
+  heading:
+    type: string
+    label: Story heading
+  description:
+    type: string
+    label: Print story
+  artworkImage:
+    type: image
+    label: Print artwork
+    group: Artwork
+  artworkAlt:
+    type: string
+    label: Artwork alternative text
+    group: Artwork
+  artworkCaption:
+    type: string
+    label: Artwork caption
+    group: Artwork
+  garmentImage:
+    type: image
+    label: Garment image
+    group: Garment
+  garmentAlt:
+    type: string
+    label: Garment alternative text
+    group: Garment
+  garmentCaption:
+    type: string
+    label: Garment caption
+    group: Garment

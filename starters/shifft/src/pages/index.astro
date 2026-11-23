@@ -1,0 +1,24 @@
+---
+import { getEntry } from 'astro:content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Hero from '../islands/hero/home/Island.astro';
+import Ink from '../islands/story/ink/Island.astro';
+import Arrivals from '../islands/collection/arrivals/Island.astro';
+import Trail from '../islands/product/trail/Island.astro';
+import TrailDetails from '../islands/product/trail-details/Island.astro';
+import BestSellers from '../islands/catalog/best-sellers/Island.astro';
+import Print from '../islands/story/print/Island.astro';
+
+const page = await getEntry('pages', 'home');
+if (!page) throw new Error('Missing SHIFFT home page.');
+---
+
+<SiteLayout title={page.data.title} description="Discover the SHIFFT AW26 collection, from graphic tees to the Shift Trail 01.">
+  <Hero {...page.data.sections[0].fields} />
+  <Ink {...page.data.sections[1].fields} />
+  <Arrivals {...page.data.sections[2].fields} />
+  <Trail {...page.data.sections[3].fields} />
+  <TrailDetails {...page.data.sections[4].fields} />
+  <BestSellers {...page.data.sections[5].fields} />
+  <Print {...page.data.sections[6].fields} />
+</SiteLayout>

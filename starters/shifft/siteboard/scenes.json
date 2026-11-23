@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "scenes": {
+    "collection": {
+      "label": "The SHIFFT drop",
+      "source": "src/islands/collection/arrivals/Island.astro",
+      "group": "#collection-frames",
+      "direction": "horizontal",
+      "frames": [
+        {
+          "element": "#trail-look"
+        },
+        {
+          "element": "#tee-look"
+        },
+        {
+          "element": "#white-look"
+        }
+      ],
+      "story": {
+        "purpose": "Move from the trail shoe to the graphic tee and finish with the full look.",
+        "previous": "src/islands/story/ink/Island.astro",
+        "scroll": {
+          "axis": "vertical",
+          "checkpoints": [
+            {
+              "progress": 0,
+              "description": "The cyan trail shoe panel is in front."
+            },
+            {
+              "progress": 0.5,
+              "description": "The pink graphic tee panel comes to the front."
+            },
+            {
+              "progress": 1,
+              "description": "The full look reaches the centre and the gallery releases."
+            }
+          ],
+          "reducedMotion": "Read all three cards in order in a static grid or vertical stack."
+        },
+        "handoff": {
+          "to": "src/islands/product/trail/Island.astro",
+          "description": "The trail shoe gets its own close-up, materials and fit in the section below."
+        }
+      }
+    }
+  },
+  "pageFlows": {
+    "home": {
+      "page": "src/pages/index.astro",
+      "beats": [
+        {
+          "source": "src/islands/hero/home/Island.astro",
+          "label": "Move without limits",
+          "purpose": "Open with the campaign portrait and the oversized SHIFFT tee.",
+          "handoff": "The framed campaign portrait gives way to the printed brush mark."
+        },
+        {
+          "source": "src/islands/story/ink/Island.astro",
+          "label": "Engineered to move",
+          "purpose": "Introduce the SHIFFT mission beside the handmade brush artwork.",
+          "motion": {
+            "triggers": [
+              "page-scroll"
+            ],
+            "description": "A dithered ink edge reveals the brush stroke while the headline reverses over the ink.",
+            "reducedMotion": "The completed ink print and readable headline hold still."
+          },
+          "handoff": "The Our story link leads to the original artwork and the finished print."
+        },
+        {
+          "source": "src/islands/collection/arrivals/Island.astro",
+          "label": "New arrivals",
+          "scene": "collection",
+          "purpose": "Compare the trail shoe, graphic tee and complete look.",
+          "motion": {
+            "triggers": [
+              "page-scroll",
+              "interaction"
+            ],
+            "description": "Advance three cards along a shallow arc on desktop. Swipe or use the controls on narrow screens.",
+            "reducedMotion": "All three items remain visible in reading order."
+          }
+        },
+        {
+          "source": "src/islands/product/trail/Island.astro",
+          "label": "Shift Trail 01",
+          "purpose": "Compare the two colourways and inspect the trail shoe’s artwork, materials and fit.",
+          "motion": {
+            "triggers": [
+              "interaction"
+            ],
+            "description": "Colour controls swap and crossfade the shoe. Zoom opens an enlarged view.",
+            "reducedMotion": "Colour changes and zoom appear immediately."
+          },
+          "handoff": "Compare the upper and tread in the detail studies below."
+        },
+        {
+          "source": "src/islands/product/trail-details/Island.astro",
+          "label": "Made for the trail",
+          "purpose": "Look closely at the trail shoe’s upper and tread."
+        },
+        {
+          "source": "src/islands/catalog/best-sellers/Island.astro",
+          "label": "Best sellers",
+          "purpose": "Browse the trail shoe, the white Move Tee and the black graphic tee.",
+          "handoff": "The graphic tee leads to the original artwork and its printed counterpart."
+        },
+        {
+          "source": "src/islands/story/print/Island.astro",
+          "label": "From ink to fabric",
+          "purpose": "See how the hand-drawn marks become the white graphic on the black tee."
+        }
+      ]
+    }
+  }
+}

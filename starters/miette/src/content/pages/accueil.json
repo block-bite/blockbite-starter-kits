@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "template": "page",
+  "title": "Miette Club — Du beurre, du beau, du bonheur.",
+  "sections": [
+    {
+      "island": "hero/home",
+      "fields": {
+        "eyebrow": "BOULANGERIE FINE · ESPRIT LIBRE",
+        "heading": "Du beurre.\nDu beau.\nDu bonheur.",
+        "body": "Les classiques français, une petite insolence en plus.\nDu feuilletage qui craque, du café qui réveille.\nEt aucune raison de se presser.",
+        "actionLabel": "Découvrir la carte  ↗",
+        "actionHref": "/la-carte/",
+        "actionNote": "Fait avec amour.\nEt beaucoup de beurre.",
+        "signature": "ARTISANAL PAR NATURE. GOURMAND PAR CHOIX.",
+        "image": "/images/croissants.jpg",
+        "imageAlt": "Croissants dorés sur le comptoir d’une boulangerie."
+      }
+    },
+    {
+      "island": "site/marquee",
+      "fields": {
+        "firstMessage": "BONJOUR LE BONHEUR",
+        "secondMessage": "ALL BUTTER. NO BORING.",
+        "thirdMessage": "ENCORE UNE MIETTE ?"
+      }
+    },
+    {
+      "island": "features/signatures",
+      "fields": {
+        "heading": "Les petites\nobsessions.",
+        "notreSelectionEyebrow": "01 / À CROQUER",
+        "notreSelectionBody": "Un grand classique. Une création qui change.\nToujours une bonne excuse.",
+        "notreSelectionAction": "Toute la carte  ↗",
+        "notreSelectionHref": "/la-carte/",
+        "leCroissantImage": "/images/croissants.jpg",
+        "leCroissantImageAlt": "Croissants dorés sur le comptoir d’une boulangerie.",
+        "leCroissantEyebrow": "L’INDISPENSABLE",
+        "leCroissantHeading": "Le croissant culte",
+        "leCroissantBody": "Feuilleté, doré, jamais sage.  ·  2,80 €",
+        "leCroissantAction": "Le découvrir ↗",
+        "leCroissantHref": "/la-carte/#viennoiseries",
+        "laPatisserieImage": "/images/patisseries.jpg",
+        "laPatisserieImageAlt": "Tarte aux framboises décorée d’une rose en pâte d’amande.",
+        "laPatisserieEyebrow": "LE CRUSH DU MOMENT",
+        "laPatisserieHeading": "La framboise libre",
+        "laPatisserieBody": "Vanille douce, fruit vif, pâte délicate.  ·  6,50 €",
+        "laPatisserieAction": "Les douceurs ↗",
+        "laPatisserieHref": "/la-carte/#patisseries",
+        "leGesteImage": "/images/atelier.jpg",
+        "leGesteImageAlt": "Des mains roulent la pâte à croissant sur une table farinée.",
+        "leGesteEyebrow": "LE VRAI LUXE",
+        "leGesteHeading": "Prendre le temps",
+        "leGesteBody": "Des mains, de la patience, du bon sens.",
+        "leGesteAction": "Entrer dans la maison ↗",
+        "leGesteHref": "/la-maison/"
+      }
+    },
+    {
+      "island": "story/philosophy",
+      "fields": {
+        "image": "/images/atelier.jpg",
+        "imageAlt": "Des mains roulent la pâte à croissant sur une table farinée.",
+        "leBonSansLesManieresEyebrow": "BON GOÛT. BONNE COMPAGNIE.",
+        "leBonSansLesManieresHeading": "Le bon goût,\nsans les\nmanières.",
+        "leBonSansLesManieresBody": "On aime le travail bien fait, les longues fermentations et les tables où l’on reste. Le luxe, pour nous, c’est un croissant encore tiède et le temps de le savourer.",
+        "leBonSansLesManieresAction": "Notre histoire  ↗",
+        "leBonSansLesManieresHref": "/la-maison/"
+      }
+    },
+    {
+      "island": "invitation/visit",
+      "fields": {
+        "eyebrow": "LE PROCHAIN BON MOMENT",
+        "heading": "On vous garde\nune petite place.",
+        "body": "Un café, une viennoiserie, et le reste peut attendre.",
+        "action": "Passer nous voir  ↗",
+        "actionHref": "/nous-trouver/"
+      }
+    }
+  ]
+}

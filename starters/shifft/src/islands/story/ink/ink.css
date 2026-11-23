@@ -1,0 +1,108 @@
+.ink-story {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  padding-block: clamp(3rem, 7vh, 7rem);
+  gap: clamp(1.5rem, 5vw, 5.5rem);
+}
+.ink-poster {
+  position: relative;
+  isolation: isolate;
+  overflow: clip;
+  container-type: inline-size;
+  display: grid;
+  align-content: center;
+  gap: clamp(1.1rem, 3vw, 2rem);
+  min-width: 0;
+  min-block-size: clamp(15rem, 60vw, 28rem);
+  background-color: var(--color-paper);
+}
+
+.ink-drawing {
+  position: absolute;
+  inset-inline: 18% 4%;
+  inset-block-start: 47%;
+  aspect-ratio: 960 / 338;
+  transform: translateY(-50%) rotate(-9deg) scaleY(1.2);
+  clip-path: polygon(1% 99%, 25% 4%, 65% 0, 100% 9%, 83% 86%, 76% 94%, 44% 96%, 1% 100%);
+  pointer-events: none;
+}
+
+.ink-print, .ink-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ink-canvas {
+  visibility: hidden;
+}
+
+.ink-story[data-ink-state="ready"] .ink-canvas {
+  visibility: visible;
+}
+
+.ink-story[data-ink-state="ready"] .ink-print {
+  visibility: hidden;
+}
+
+.ink-title {
+  font-size: clamp(2.3rem, 15.6cqw, 10.25rem);
+  padding-block: .07em;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.ink-note {
+  margin-block-end: 0;
+  max-inline-size: 45ch;
+  line-height: 1.45;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.ink-mission {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: clamp(1.1rem, 2vw, 1.8rem);
+  min-width: 0;
+  max-width: 43rem;
+}
+.ink-lead, .ink-follow {
+  max-width: 35ch;
+  font-size: clamp(1.22rem, 1.92vw, 2rem);
+  line-height: 1.3;
+  letter-spacing: -.027em;
+  text-wrap: pretty;
+}
+.ink-lead { font-weight: 600; }
+.ink-follow { font-weight: 450; }
+.ink-story-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.3rem;
+  min-height: 2.75rem;
+  padding: .55rem 1.25rem;
+  font-size: .88rem;
+  font-weight: 650;
+  color: var(--color-paper);
+  background: var(--color-carbon);
+}
+.ink-story-link:hover { background: var(--color-ink); }
+.ink-story-link:focus-visible { outline: 3px solid var(--color-electric); outline-offset: 3px; }
+.ink-signoff { display: flex; align-items: center; gap: .8rem; margin-top: .35rem; }
+.ink-avatar {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ink-signature { display: block; width: 7.5rem; height: auto; object-fit: contain; object-position: left center; }
+.ink-signer { margin-top: .18rem; font-size: .82rem; font-weight: 600; line-height: 1.3; }
+@media (width >= 56rem) {
+  .ink-story { grid-template-columns: minmax(0, 58fr) minmax(0, 42fr); }
+  .ink-poster { min-block-size: clamp(24rem, 56vh, 42rem); }
+}

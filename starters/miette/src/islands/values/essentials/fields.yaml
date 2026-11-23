@@ -1,0 +1,35 @@
+version: 1
+fields:
+  eyebrow:
+    type: string
+    label: Eyebrow
+  heading:
+    type: string
+    label: Heading
+  leTempsEyebrow:
+    type: string
+    label: Le Temps Eyebrow
+  leTempsHeading:
+    type: string
+    label: Le Temps Heading
+  leTempsBody:
+    type: string
+    label: Le Temps Body
+  laMatiereEyebrow:
+    type: string
+    label: La Matiere Eyebrow
+  laMatiereHeading:
+    type: string
+    label: La Matiere Heading
+  laMatiereBody:
+    type: string
+    label: La Matiere Body
+  lePartageEyebrow:
+    type: string
+    label: Le Partage Eyebrow
+  lePartageHeading:
+    type: string
+    label: Le Partage Heading
+  lePartageBody:
+    type: string
+    label: Le Partage Body

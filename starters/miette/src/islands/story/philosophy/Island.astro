@@ -1,0 +1,15 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'story/philosophy'>;
+const { image, imageAlt, leBonSansLesManieresEyebrow, leBonSansLesManieresHeading, leBonSansLesManieresBody, leBonSansLesManieresAction, leBonSansLesManieresHref } = Astro.props;
+---
+
+<section class="bg-bordeaux py-12 px-page-gutter gap-8 lg:gap-18 text-base text-left w-full max-w-full flex flex-col items-center justify-start md:py-20 md:px-16 lg:flex-row lg:flex-wrap">
+  <img class="rounded-image bg-ligne text-base text-left max-w-full grow-0 shrink-0 basis-auto h-auto min-h-0 lg:w-[calc(50%_-_36px)] object-cover aspect-[3/4] w-full" src={image} alt={imageAlt} loading="lazy" width="1200" height="800" />
+  <div class="gap-7 text-base text-left max-w-full flex flex-col items-stretch justify-start lg:w-[calc(50%_-_36px)] md:grow-0 md:shrink-0 md:basis-auto w-full min-w-0">
+    <p class="text-beurre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{leBonSansLesManieresEyebrow}</p>
+    <h2 class="text-creme font-display font-normal text-title-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:text-story md:tracking-[-1.5px]">{leBonSansLesManieresHeading}</h2>
+    <p class="text-creme text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{leBonSansLesManieresBody}</p>
+    <a class="bg-beurre text-bordeaux border-beurre border-1 rounded-button hover:bg-creme hover:border-creme focus-visible:outline-beurre font-medium py-3.5 px-6 text-label text-center w-fit max-w-full grow-0 shrink-0 basis-auto inline-flex min-w-0 whitespace-pre-wrap items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 motion-reduce:transition-none transition duration-(--duration-interaction) ease-interaction motion-safe:hover:-translate-y-interaction-lift motion-safe:focus-visible:-translate-y-interaction-lift motion-safe:active:translate-y-0 focus-visible:bg-creme focus-visible:border-creme active:bg-rose active:border-rose" href={leBonSansLesManieresHref}>{leBonSansLesManieresAction}</a>
+  </div>
+</section>

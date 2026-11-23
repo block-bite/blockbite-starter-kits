@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "template": "page",
+  "title": "Le journal — Miette Club",
+  "sections": [
+    {
+      "island": "hero/journal",
+      "fields": {
+        "eyebrow": "DES NOUVELLES DU FOURNIL",
+        "heading": "Les mots.\nEt les miettes.",
+        "body": "Nos gestes, nos envies, nos petits rituels. À lire avec un café."
+      }
+    },
+    {
+      "island": "journal/lamination",
+      "fields": {
+        "image": "/images/atelier.jpg",
+        "imageAlt": "Des mains roulent la pâte à croissant sur une table farinée.",
+        "histoireEyebrow": "01 / Dans l’atelier",
+        "histoireHeading": "Le feuilletage, cette petite folie.",
+        "histoireBody": "Un croissant, c’est une alternance de pâte et de beurre, pliée avec patience. À la cuisson, l’eau devient vapeur et sépare les couches.",
+        "histoireAction": "Lire l’histoire ↗",
+        "histoireHref": "/le-journal/le-feuilletage/"
+      }
+    },
+    {
+      "island": "journal/seasonal",
+      "fields": {
+        "image": "/images/patisseries.jpg",
+        "imageAlt": "Tarte aux framboises décorée d’une rose en pâte d’amande.",
+        "histoireEyebrow": "02 / Nos envies",
+        "histoireHeading": "Le goût des choses de saison.",
+        "histoireBody": "Une carte vivante suit les envies et les saisons. Un fruit mûr appelle souvent peu de choses : une crème douce, un fond croustillant, un équilibre entre le sucre et l’acidité.",
+        "histoireAction": "Lire l’histoire ↗",
+        "histoireHref": "/le-journal/le-gout-des-saisons/"
+      }
+    },
+    {
+      "island": "journal/slow-mornings",
+      "fields": {
+        "image": "/images/croissants.jpg",
+        "imageAlt": "Croissants dorés sur le comptoir d’une boulangerie.",
+        "histoireEyebrow": "03 / Le club",
+        "histoireHeading": "L’art de ne rien prévoir.",
+        "histoireBody": "S’asseoir cinq minutes. Choisir son café.",
+        "histoireAction": "Lire l’histoire ↗",
+        "histoireHref": "/le-journal/les-matins-lents/"
+      }
+    }
+  ]
+}

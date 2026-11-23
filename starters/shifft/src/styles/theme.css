@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@import "../islands/site/header/header.css";
+@import "../islands/hero/home/campaign.css";
+@import "../islands/hero/home/campaign-stripe.css";
+@import "../islands/story/ink/ink.css";
+@import "../islands/collection/arrivals/collection.css";
+@import "../islands/product/trail/product.css";
+@import "../islands/catalog/best-sellers/product-card.css";
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/inter-variable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/inter-variable-italic.woff2") format("woff2");
+}
+
+@theme {
+  --font-sans: Inter, Arial, sans-serif;
+  --font-display: Inter, Arial, sans-serif;
+  --color-carbon: #0b0b0b;
+  --color-ink: #202b49;
+  --color-ice: #68ebf5;
+  --color-blush: #ffd1ce;
+  --color-paper: #f5f5f5;
+  --color-muted: #d5d7db;
+  --color-lilac: #ab9ae2;
+  --color-coral: #ff786f;
+  --color-electric: #3c00ff;
+  --radius-action: 9999px;
+  --radius-media: 1rem;
+}
+
+@layer base {
+  :root {
+    --shifft-nav-height: 4rem;
+    --shifft-nav-drop: .5rem;
+    --shifft-nav-cover: calc(var(--shifft-nav-height) + var(--shifft-nav-drop) + .5rem);
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-padding-block-start: var(--shifft-nav-cover);
+  }
+  :focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+  ::selection { background-color: var(--color-ice); color: var(--color-ink); }
+}
+
+@utility shifft-display {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -0.028em;
+  line-height: 0.8;
+}
+
+@utility shifft-gutter {
+  padding-inline: clamp(1.125rem, 4vw, 4.5rem);
+}
+
+@utility shifft-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@utility shifft-pill {
+  border-radius: var(--radius-action);
+}

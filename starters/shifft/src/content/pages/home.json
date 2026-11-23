@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "template": "page",
+  "title": "SHIFFT — Move Without Limits",
+  "sections": [
+    {
+      "island": "hero/home",
+      "fields": {
+        "season": "Autumn / Winter 2026",
+        "heading": "MOVE\nWITHOUT\nLIMITS.",
+        "image": "/images/shifft-hero.webp",
+        "imageAlt": "Model wearing the oversized white SHIFFT tee with a violet brush print.",
+        "actionLabel": "Discover the drop",
+        "actionHref": "#collection",
+        "stripeImage": "/images/shifft-hero-stripe.webp",
+        "arrowImage": "/images/shifft-action-arrow.webp"
+      }
+    },
+    {
+      "island": "story/ink",
+      "fields": {
+        "heading": "ENGINEERED\nTO MOVE",
+        "brushImage": "/images/shifft-brush.webp",
+        "note": "Technical layers for city miles, trail weather and everything between.",
+        "missionLead": "We make gear for the long way home. City blocks, loose gravel, plans that change halfway through.",
+        "missionFollow": "Every print starts with a brush. We keep the marks rough so the gear feels as alive as the people wearing it.",
+        "storyLabel": "Our story",
+        "storyHref": "#print",
+        "avatarImage": "/images/shifft-mika-avatar.webp",
+        "signatureImage": "/images/shifft-mika-signature.webp",
+        "signerName": "Mika Vale · SHIFFT"
+      }
+    },
+    {
+      "island": "collection/arrivals",
+      "fields": {
+        "heading": "New arrivals",
+        "shoeName": "Shift Trail 01",
+        "shoePrice": "€150",
+        "shoeImage": "/images/shifft-shoe.webp",
+        "shoeAlt": "A white Shift Trail 01 with black laces, brush marks and tread.",
+        "shoeLinkLabel": "Explore the shoe",
+        "shoeHref": "#trail",
+        "teeName": "Shift Graphic Tee",
+        "teePrice": "€85",
+        "teeImage": "/images/shifft-tee.webp",
+        "teeAlt": "Black short-sleeve tee with a white hand-drawn graphic.",
+        "lookName": "Move Look 01",
+        "lookDescription": "Oversized fit",
+        "lookImage": "/images/shifft-story.webp",
+        "lookAlt": "Model in a plain white oversized tee with black trousers."
+      }
+    },
+    {
+      "island": "product/trail",
+      "fields": {
+        "category": "Trail footwear",
+        "heading": "Shift\nTrail 01",
+        "image": "/images/shifft-trail-detail.webp",
+        "imageAlt": "Shift Trail 01 in profile, showing its ridged sole, black zigzags and white mesh.",
+        "price": "€150",
+        "description": "CloudLite™ foam, Alpine Grip outsole and FjordTex™ weather protection.",
+        "colourLabel": "Colour",
+        "colour": "Chalk / Black",
+        "sizeLabel": "EU sizes",
+        "sizes": "39–44",
+        "collectionLabel": "Back to the drop",
+        "collectionHref": "#collection",
+        "blushColour": "Blush / Black",
+        "blushImage": "/images/shifft-trail-blush.webp",
+        "blushImageAlt": "Shift Trail 01 in blush pink with a black trail sole.",
+        "zoomLabel": "Zoom image",
+        "closeLabel": "Close zoom",
+        "studioLabel": "Studio shoe view",
+        "boxImage": "/images/shifft-trail-box.webp",
+        "boxImageAlt": "Chalk and black Shift Trail 01 resting in an open natural cardboard SHIFFT shoebox.",
+        "boxLabel": "Shoebox view",
+        "outsideImage": "/images/shifft-trail-outside.webp",
+        "outsideImageAlt": "Chalk and black trail shoes worn on a rocky path outdoors.",
+        "outsideLabel": "On the trail"
+      }
+    },
+    {
+      "island": "product/trail-details",
+      "fields": {
+        "heading": "Made for the trail",
+        "upperTitle": "FjordTex™ upper",
+        "upperDescription": "FjordTex™ gives the upper its weather protection.",
+        "upperImage": "/images/shifft-trail-upper.webp",
+        "upperAlt": "A close-up of the white mesh, black stitching and laces on the Shift Trail 01.",
+        "soleTitle": "Alpine Grip outsole",
+        "soleDescription": "A ridged tread runs from heel to toe.",
+        "soleImage": "/images/shifft-trail-grip.webp",
+        "soleAlt": "Black tread and the layered forefoot sole on the Shift Trail 01."
+      }
+    },
+    {
+      "island": "catalog/best-sellers",
+      "fields": {
+        "heading": "Best sellers",
+        "chalkName": "Shift Trail 01",
+        "chalkColour": "Chalk / Black",
+        "chalkPrice": "€150",
+        "chalkImage": "/images/shifft-shoe.webp",
+        "chalkAlt": "White and black Shift Trail 01 with its trail tread in view.",
+        "chalkHref": "#trail",
+        "moveName": "Move Tee",
+        "moveColour": "White / Black",
+        "movePrice": "€65",
+        "moveImage": "/images/shifft-move-tee.webp",
+        "moveAlt": "White short-sleeved Move Tee with a single black brush mark on the chest.",
+        "teeName": "Shift Graphic Tee",
+        "teeColour": "Black / White",
+        "teePrice": "€85",
+        "teeImage": "/images/shifft-tee.webp",
+        "teeAlt": "Black graphic tee printed with SHIFFT’s white brushwork.",
+        "teeHref": "#print"
+      }
+    },
+    {
+      "island": "story/print",
+      "fields": {
+        "heading": "From ink\nto fabric",
+        "description": "The same hand-drawn strokes become the chest print on the Shift Graphic Tee.",
+        "artworkImage": "/images/shifft-print.webp",
+        "artworkAlt": "Original black brush strokes and marks on cyan.",
+        "artworkCaption": "Original ink artwork",
+        "garmentImage": "/images/shifft-tee.webp",
+        "garmentAlt": "Black SHIFFT tee with the same brush marks printed in white across the chest.",
+        "garmentCaption": "Shift Graphic Tee"
+      }
+    }
+  ]
+}

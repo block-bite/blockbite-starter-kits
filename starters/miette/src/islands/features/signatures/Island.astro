@@ -1,0 +1,41 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'features/signatures'>;
+const { heading, notreSelectionEyebrow, notreSelectionBody, notreSelectionAction, notreSelectionHref, leCroissantImage, leCroissantImageAlt, leCroissantEyebrow, leCroissantHeading, leCroissantBody, leCroissantAction, leCroissantHref, laPatisserieImage, laPatisserieImageAlt, laPatisserieEyebrow, laPatisserieHeading, laPatisserieBody, laPatisserieAction, laPatisserieHref, leGesteImage, leGesteImageAlt, leGesteEyebrow, leGesteHeading, leGesteBody, leGesteAction, leGesteHref } = Astro.props;
+---
+
+<section class="w-full max-w-full bg-creme px-page-gutter py-12 text-left md:px-16 md:py-20">
+  <div class="mx-auto flex w-full min-w-0 max-w-site flex-col gap-12">
+    <div class="gap-6 w-full min-w-0 text-base text-left max-w-full flex flex-col items-stretch justify-start lg:gap-12 lg:flex-row lg:flex-wrap lg:items-end">
+      <h2 class="text-bordeaux font-display font-normal text-title-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:text-display lg:w-[calc(50%_-_24px)] md:grow-0 md:shrink-0 md:basis-auto md:tracking-[-1.5px] w-full">{heading}</h2>
+      <div class="gap-4 w-full min-w-0 text-base text-left max-w-full flex flex-col items-stretch justify-start lg:w-[calc(50%_-_24px)] md:grow-0 md:shrink-0 md:basis-auto">
+        <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{notreSelectionEyebrow}</p>
+        <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{notreSelectionBody}</p>
+        <a class="bg-transparent text-bordeaux border-bordeaux border-1 rounded-button hover:bg-bordeaux hover:text-beurre focus-visible:outline-bordeaux font-medium py-3.5 px-6 text-label text-center w-fit max-w-full grow-0 shrink-0 basis-auto inline-flex min-w-0 whitespace-pre-wrap items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 motion-reduce:transition-none transition duration-(--duration-interaction) ease-interaction motion-safe:hover:-translate-y-interaction-lift motion-safe:focus-visible:-translate-y-interaction-lift motion-safe:active:translate-y-0 focus-visible:bg-bordeaux focus-visible:text-beurre active:bg-encre active:border-encre active:text-beurre" href={notreSelectionHref}>{notreSelectionAction}</a>
+      </div>
+    </div>
+    <div class="gap-10 text-base text-left max-w-full grid flex-col grid-cols-1 items-stretch md:gap-7 md:grid-cols-2 lg:grid-cols-3">
+      <a href={leCroissantHref} class="gap-[14px] text-base text-left max-w-full flex flex-col items-stretch justify-start md:col-span-1 md:w-full group rounded-image cursor-pointer transition duration-(--duration-interaction) ease-interaction motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux motion-safe:hover:-translate-y-interaction-lift motion-safe:focus-visible:-translate-y-interaction-lift motion-safe:active:translate-y-0 active:text-encre active:bg-rose">
+        <img class="rounded-image bg-ligne text-base text-left max-w-full grow-0 shrink-0 basis-auto h-75 min-h-0 md:h-85 object-cover" src={leCroissantImage} alt={leCroissantImageAlt} loading="lazy" width="960" height="1200" />
+        <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{leCroissantEyebrow}</p>
+        <h2 class="text-bordeaux font-display font-normal text-card text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:tracking-[-1.5px] group-hover:text-encre group-focus-visible:text-encre group-active:text-encre transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none">{leCroissantHeading}</h2>
+        <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{leCroissantBody}</p>
+        <span class="w-fit py-3 text-label font-medium text-bordeaux underline underline-offset-4 group-hover:decoration-2 group-focus-visible:decoration-2 transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none">{leCroissantAction}</span>
+      </a>
+      <a href={laPatisserieHref} class="gap-[14px] text-base text-left max-w-full flex flex-col items-stretch justify-start group rounded-image cursor-pointer transition duration-(--duration-interaction) ease-interaction motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux motion-safe:hover:-translate-y-interaction-lift motion-safe:focus-visible:-translate-y-interaction-lift motion-safe:active:translate-y-0 active:text-encre active:bg-rose">
+        <img class="rounded-image bg-ligne text-base text-left max-w-full grow-0 shrink-0 basis-auto h-75 min-h-0 md:h-85 object-cover" src={laPatisserieImage} alt={laPatisserieImageAlt} loading="lazy" width="1200" height="800" />
+        <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{laPatisserieEyebrow}</p>
+        <h2 class="text-bordeaux font-display font-normal text-card text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:tracking-[-1.5px] group-hover:text-encre group-focus-visible:text-encre group-active:text-encre transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none">{laPatisserieHeading}</h2>
+        <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{laPatisserieBody}</p>
+        <span class="w-fit py-3 text-label font-medium text-bordeaux underline underline-offset-4 group-hover:decoration-2 group-focus-visible:decoration-2 transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none">{laPatisserieAction}</span>
+      </a>
+      <a href={leGesteHref} class="gap-[14px] text-base text-left max-w-full flex flex-col items-stretch justify-start group rounded-image cursor-pointer transition duration-(--duration-interaction) ease-interaction motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux motion-safe:hover:-translate-y-interaction-lift motion-safe:focus-visible:-translate-y-interaction-lift motion-safe:active:translate-y-0 active:text-encre active:bg-rose">
+        <img class="rounded-image bg-ligne text-base text-left max-w-full grow-0 shrink-0 basis-auto h-75 min-h-0 md:h-85 object-cover" src={leGesteImage} alt={leGesteImageAlt} loading="lazy" width="1200" height="800" />
+        <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{leGesteEyebrow}</p>
+        <h2 class="text-bordeaux font-display font-normal text-card text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:tracking-[-1.5px] group-hover:text-encre group-focus-visible:text-encre group-active:text-encre transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none">{leGesteHeading}</h2>
+        <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{leGesteBody}</p>
+        <span class="w-fit py-3 text-label font-medium text-bordeaux underline underline-offset-4 group-hover:decoration-2 group-focus-visible:decoration-2 transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none">{leGesteAction}</span>
+      </a>
+    </div>
+  </div>
+</section>

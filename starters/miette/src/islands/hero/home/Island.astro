@@ -1,0 +1,19 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'hero/home'>;
+const { eyebrow, heading, body, actionLabel, actionHref, actionNote, signature, image, imageAlt } = Astro.props;
+---
+
+<section class="bg-creme pt-6 pr-page-gutter pb-12 pl-page-gutter gap-8 text-base text-left w-full max-w-full flex flex-col items-center justify-start md:pt-9 md:pr-16 md:pb-13 md:pl-16 md:gap-14 lg:flex-row lg:flex-wrap">
+  <img class="rounded-image bg-ligne text-base text-left max-w-full grow-0 shrink-0 basis-auto h-110 min-h-0 lg:w-[calc(50%_-_28px)] md:h-155 object-cover w-full" src={image} alt={imageAlt} loading="eager" width="960" height="1200" />
+  <div class="pt-0 pr-0 pb-[18px] pl-0 gap-6 text-base text-left max-w-full flex flex-col items-stretch justify-start md:py-[18px] md:px-0 md:gap-[30px] lg:w-[calc(50%_-_28px)] md:grow-0 md:shrink-0 md:basis-auto w-full min-w-0">
+    <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{eyebrow}</p>
+    <h1 class="text-bordeaux font-display font-normal text-hero-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:text-display xl:text-hero md:w-11/12 md:grow-0 md:shrink-0 md:basis-auto md:tracking-[-1.5px] lg:min-h-[288px] md:aspect-auto">{heading}</h1>
+    <p class="text-encre text-body text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{body}</p>
+    <div class="gap-4 text-base text-left max-w-full flex flex-col items-start justify-start lg:gap-6 lg:flex-row lg:items-center lg:flex-wrap">
+      <p class="text-encre text-eyebrow text-left w-fit max-w-full grow-0 shrink-0 basis-auto block min-w-0 italic leading-[1.65] whitespace-pre-wrap">{actionNote}</p>
+      <a class="bg-bordeaux text-beurre border-bordeaux border-1 rounded-button hover:bg-encre hover:border-encre focus-visible:outline-bordeaux font-medium py-3.5 px-6 text-label text-center w-fit max-w-full grow-0 shrink-0 basis-auto inline-flex min-w-0 whitespace-pre-wrap items-center justify-center focus-visible:outline-2 focus-visible:outline-offset-4 motion-reduce:transition-none transition duration-(--duration-interaction) ease-interaction motion-safe:hover:-translate-y-interaction-lift motion-safe:focus-visible:-translate-y-interaction-lift motion-safe:active:translate-y-0 focus-visible:bg-encre focus-visible:border-encre active:bg-encre active:border-encre" href={actionHref}>{actionLabel}</a>
+    </div>
+    <p class="text-encre font-semibold text-micro text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.3px] uppercase whitespace-pre-wrap">{signature}</p>
+  </div>
+</section>

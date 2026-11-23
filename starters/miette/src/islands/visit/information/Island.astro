@@ -1,0 +1,30 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'visit/information'>;
+const { adresseEyebrow, adresseHeading, adresseBody, leRythmeEyebrow, leRythmeHeading, leRythmeBody, lesQuestionsEyebrow, lesQuestionsHeading, lesQuestionsAction, lesQuestionsDetail, lesQuestionsActionNote, lesQuestionsDetailNote } = Astro.props;
+---
+
+<section class="bg-rose py-12 px-page-gutter gap-12 text-base text-left w-full max-w-full grid flex-col grid-cols-1 items-stretch md:py-20 md:px-16 md:grid-cols-2 lg:grid-cols-3">
+  <div class="gap-6 text-base text-left max-w-full flex flex-col items-stretch justify-start">
+    <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{adresseEyebrow}</p>
+    <h2 class="text-bordeaux font-display font-normal text-title-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:tracking-[-1.5px]">{adresseHeading}</h2>
+    <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{adresseBody}</p>
+  </div>
+  <div class="gap-6 text-base text-left max-w-full flex flex-col items-stretch justify-start">
+    <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{leRythmeEyebrow}</p>
+    <h2 class="text-bordeaux font-display font-normal text-title-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:tracking-[-1.5px]">{leRythmeHeading}</h2>
+    <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{leRythmeBody}</p>
+  </div>
+  <div class="gap-6 text-base text-left max-w-full flex flex-col items-stretch justify-start">
+    <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{lesQuestionsEyebrow}</p>
+    <h2 class="text-bordeaux font-display font-normal text-title-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:tracking-[-1.5px]">{lesQuestionsHeading}</h2>
+    <details class="w-full border-t py-4 text-sm leading-relaxed group border-ligne open:border-bordeaux transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none">
+      <summary class="cursor-pointer font-medium rounded-button list-inside px-4 py-3 text-bordeaux transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux hover:bg-beurre focus-visible:bg-beurre active:bg-bordeaux active:text-beurre group-open:bg-beurre group-open:active:bg-bordeaux">{lesQuestionsAction}</summary>
+      <p class="mt-3 max-w-prose">{lesQuestionsDetail}</p>
+    </details>
+    <details class="w-full border-t py-4 text-sm leading-relaxed group border-ligne open:border-bordeaux transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none">
+      <summary class="cursor-pointer font-medium rounded-button list-inside px-4 py-3 text-bordeaux transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-bordeaux hover:bg-beurre focus-visible:bg-beurre active:bg-bordeaux active:text-beurre group-open:bg-beurre group-open:active:bg-bordeaux">{lesQuestionsActionNote}</summary>
+      <p class="mt-3 max-w-prose">{lesQuestionsDetailNote}</p>
+    </details>
+  </div>
+</section>

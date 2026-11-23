@@ -1,0 +1,946 @@
+{
+  "version": 1,
+  "document": {
+    "id": "local",
+    "revision": 0,
+    "visibility": "private",
+    "published": null,
+    "published_definition": null,
+    "definition": {
+      "schema": "blockbite.brand/v1",
+      "identity": {
+        "name": "Miette Club",
+        "tagline": "Du beurre. Du beau. Du bonheur.",
+        "description": "Un concept de boulangerie française contemporaine : les classiques, une petite insolence en plus. Identité de démonstration fournie avec le starter Miette.",
+        "audience": "Les voisins, les amateurs de viennoiseries artisanales et les curieux qui aiment prendre le temps.",
+        "locale": "fr",
+        "website": "",
+        "cover_asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb105"
+      },
+      "chapters": {
+        "logo": {
+          "enabled": true,
+          "introduction": "Un nom gourmand, un monogramme simple.",
+          "instructions": "Conserver le mot-symbole miette club en DM Serif Display et utiliser le monogramme existant pour les petits formats. Identité de démonstration, à adapter avant un lancement réel.",
+          "provenance": "extracted",
+          "source_asset_ids": [],
+          "prompts": [],
+          "moodboard": [],
+          "references": [],
+          "variants": [
+            {
+              "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb101",
+              "label": "Monogramme",
+              "role": "primary",
+              "background": "dark"
+            }
+          ],
+          "clear_space": "Conserver autour du symbole un espace au moins égal à un quart de sa hauteur.",
+          "minimum_size": "24 px pour le monogramme. Le nom doit rester lisible sans étirement.",
+          "avoid": [
+            "Ne pas étirer le symbole.",
+            "Ne pas remplacer le bordeaux ou le beurre par une couleur hors palette."
+          ]
+        },
+        "tone_of_voice": {
+          "enabled": true,
+          "introduction": "Chaleureux, gourmand, un peu insolent.",
+          "instructions": "Écrire en français, avec des phrases courtes et des détails concrets. Inviter sans forcer. Les prix, adresses et horaires sont des exemples à vérifier avant publication. L’adresse bonjour@miette.example est un exemple fictif à remplacer avant publication.",
+          "provenance": "extracted",
+          "source_asset_ids": [],
+          "prompts": [],
+          "moodboard": [],
+          "references": [],
+          "principles": [
+            {
+              "title": "Donner faim",
+              "description": "Parler du croustillant, du beurre et des gestes plutôt que de promesses abstraites."
+            },
+            {
+              "title": "Faire simple",
+              "description": "S’adresser aux voisins avec des mots familiers et accueillants."
+            },
+            {
+              "title": "Garder le sourire",
+              "description": "Un trait d’esprit suffit. Ne jamais faire passer la plaisanterie avant une information utile."
+            }
+          ],
+          "preferred_terms": [
+            "la maison",
+            "le fournil",
+            "prendre le temps",
+            "les gourmands"
+          ],
+          "avoid_terms": [
+            "révolutionnaire",
+            "premium",
+            "solution innovante"
+          ],
+          "examples": [
+            {
+              "label": "Une invitation",
+              "before": "Découvrez notre offre premium de restauration.",
+              "after": "Un café, une viennoiserie, et le reste peut attendre."
+            },
+            {
+              "label": "Un classique",
+              "before": "Un produit de qualité supérieure.",
+              "after": "Feuilleté, doré, jamais sage."
+            }
+          ]
+        },
+        "typography": {
+          "enabled": true,
+          "introduction": "DM Serif Display pour les titres. Geist pour la lecture et la navigation.",
+          "instructions": "Charger les fichiers WOFF2 locaux. Titres à graisse 400, texte courant 400 et actions 500. La hiérarchie responsive du site passe de 48 à 88 px pour le titre d’accueil. Le titre du héros utilise le token text-hero-mobile sur mobile, text-display sur tablette et text-hero sur grand écran, pour conserver les lignes naturelles sans comprimer le texte dans une demi-colonne. La navigation mobile utilise DM Serif Display, à 38 px sur petit écran et 48 px à partir de 390 px; la navigation de bureau conserve Geist.",
+          "provenance": "extracted",
+          "source_asset_ids": [],
+          "prompts": [],
+          "moodboard": [],
+          "references": [],
+          "fonts": [
+            {
+              "role": "display",
+              "family": "DM Serif Display",
+              "weights": [
+                400
+              ],
+              "fallback": "serif",
+              "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb102",
+              "source_url": "https://fonts.google.com/specimen/DM+Serif+Display",
+              "files": [
+                {
+                  "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb102",
+                  "weights": [
+                    400
+                  ],
+                  "unicode_range": ""
+                }
+              ],
+              "license": {
+                "source_url": "https://openfontlicense.org/",
+                "text": "Copyright 2014-2018 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe in the United States and/or other countries. Copyright 2019 Google LLC.\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\n\nThis license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL\n\n\n-----------------------------------------------------------\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n-----------------------------------------------------------\n\nPREAMBLE\nThe goals of the Open Font License (OFL) are to stimulate worldwide\ndevelopment of collaborative font projects, to support the font creation\nefforts of academic and linguistic communities, and to provide a free and\nopen framework in which fonts may be shared and improved in partnership\nwith others.\n\nThe OFL allows the licensed fonts to be used, studied, modified and\nredistributed freely as long as they are not sold by themselves. The\nfonts, including any derivative works, can be bundled, embedded,\nredistributed and/or sold with any software provided that any reserved\nnames are not used by derivative works. The fonts and derivatives,\nhowever, cannot be released under any other type of license. The\nrequirement for fonts to remain under this license does not apply\nto any document created using the fonts or their derivatives.\n\nDEFINITIONS\n\"Font Software\" refers to the set of files released by the Copyright\nHolder(s) under this license and clearly marked as such. This may\ninclude source files, build scripts and documentation.\n\n\"Reserved Font Name\" refers to any names specified as such after the\ncopyright statement(s).\n\n\"Original Version\" refers to the collection of Font Software components as\ndistributed by the Copyright Holder(s).\n\n\"Modified Version\" refers to any derivative made by adding to, deleting,\nor substituting -- in part or in whole -- any of the components of the\nOriginal Version, by changing formats or by porting the Font Software to a\nnew environment.\n\n\"Author\" refers to any designer, engineer, programmer, technical\nwriter or other person who contributed to the Font Software.\n\nPERMISSION & CONDITIONS\nPermission is hereby granted, free of charge, to any person obtaining\na copy of the Font Software, to use, study, copy, merge, embed, modify,\nredistribute, and sell modified and unmodified copies of the Font\nSoftware, subject to the following conditions:\n\n1) Neither the Font Software nor any of its individual components,\nin Original or Modified Versions, may be sold by itself.\n\n2) Original or Modified Versions of the Font Software may be bundled,\nredistributed and/or sold with any software, provided that each copy\ncontains the above copyright notice and this license. These can be\nincluded either as stand-alone text files, human-readable headers or\nin the appropriate machine-readable metadata fields within text or\nbinary files as long as those fields can be easily viewed by the user.\n\n3) No Modified Version of the Font Software may use the Reserved Font\nName(s) unless explicit written permission is granted by the corresponding\nCopyright Holder. This restriction only applies to the primary font name as\npresented to the users.\n\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\nSoftware shall not be used to promote, endorse or advertise any\nModified Version, except to acknowledge the contribution(s) of the\nCopyright Holder(s) and the Author(s) or with their explicit written\npermission.\n\n5) The Font Software, modified or unmodified, in part or in whole,\nmust be distributed entirely under this license, and must not be\ndistributed under any other license. The requirement for fonts to\nremain under this license does not apply to any document created\nusing the Font Software.\n\nTERMINATION\nThis license becomes null and void if any of the above conditions are\nnot met.\n\nDISCLAIMER\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\nOTHER DEALINGS IN THE FONT SOFTWARE.\n",
+                "sha256": "aa49c876a28d8c0b0a3027d6c25b9c607eee8c0fb96165011d42a6ace1408fe1"
+              }
+            },
+            {
+              "role": "body",
+              "family": "Geist",
+              "weights": [
+                400,
+                500,
+                600,
+                700
+              ],
+              "fallback": "sans-serif",
+              "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb104",
+              "source_url": "https://vercel.com/font",
+              "license": {
+                "source_url": "https://openfontlicense.org/",
+                "text": "Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font) Geist-Italic[wght].ttf: Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font)\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttp://scripts.sil.org/OFL\n\n\n-----------------------------------------------------------\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n-----------------------------------------------------------\n\nPREAMBLE\nThe goals of the Open Font License (OFL) are to stimulate worldwide\ndevelopment of collaborative font projects, to support the font creation\nefforts of academic and linguistic communities, and to provide a free and\nopen framework in which fonts may be shared and improved in partnership\nwith others.\n\nThe OFL allows the licensed fonts to be used, studied, modified and\nredistributed freely as long as they are not sold by themselves. The\nfonts, including any derivative works, can be bundled, embedded,\nredistributed and/or sold with any software provided that any reserved\nnames are not used by derivative works. The fonts and derivatives,\nhowever, cannot be released under any other type of license. The\nrequirement for fonts to remain under this license does not apply\nto any document created using the fonts or their derivatives.\n\nDEFINITIONS\n\"Font Software\" refers to the set of files released by the Copyright\nHolder(s) under this license and clearly marked as such. This may\ninclude source files, build scripts and documentation.\n\n\"Reserved Font Name\" refers to any names specified as such after the\ncopyright statement(s).\n\n\"Original Version\" refers to the collection of Font Software components as\ndistributed by the Copyright Holder(s).\n\n\"Modified Version\" refers to any derivative made by adding to, deleting,\nor substituting -- in part or in whole -- any of the components of the\nOriginal Version, by changing formats or by porting the Font Software to a\nnew environment.\n\n\"Author\" refers to any designer, engineer, programmer, technical\nwriter or other person who contributed to the Font Software.\n\nPERMISSION & CONDITIONS\nPermission is hereby granted, free of charge, to any person obtaining\na copy of the Font Software, to use, study, copy, merge, embed, modify,\nredistribute, and sell modified and unmodified copies of the Font\nSoftware, subject to the following conditions:\n\n1) Neither the Font Software nor any of its individual components,\nin Original or Modified Versions, may be sold by itself.\n\n2) Original or Modified Versions of the Font Software may be bundled,\nredistributed and/or sold with any software, provided that each copy\ncontains the above copyright notice and this license. These can be\nincluded either as stand-alone text files, human-readable headers or\nin the appropriate machine-readable metadata fields within text or\nbinary files as long as those fields can be easily viewed by the user.\n\n3) No Modified Version of the Font Software may use the Reserved Font\nName(s) unless explicit written permission is granted by the corresponding\nCopyright Holder. This restriction only applies to the primary font name as\npresented to the users.\n\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\nSoftware shall not be used to promote, endorse or advertise any\nModified Version, except to acknowledge the contribution(s) of the\nCopyright Holder(s) and the Author(s) or with their explicit written\npermission.\n\n5) The Font Software, modified or unmodified, in part or in whole,\nmust be distributed entirely under this license, and must not be\ndistributed under any other license. The requirement for fonts to\nremain under this license does not apply to any document created\nusing the Font Software.\n\nTERMINATION\nThis license becomes null and void if any of the above conditions are\nnot met.\n\nDISCLAIMER\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\nOTHER DEALINGS IN THE FONT SOFTWARE.\n",
+                "sha256": "71609cbb5c78b5870d712eab73a31d76622635c6ed034ab5cee3b9ecbda8685f"
+              }
+            }
+          ],
+          "styles": [
+            {
+              "name": "Titre accueil — large",
+              "role": "display",
+              "size": 88,
+              "line_height": 1.04,
+              "weight": 400,
+              "tracking": -0.017
+            },
+            {
+              "name": "Titre accueil — mobile",
+              "role": "display",
+              "size": 48,
+              "line_height": 1.04,
+              "weight": 400,
+              "tracking": -0.015
+            },
+            {
+              "name": "Corps",
+              "role": "body",
+              "size": 15,
+              "line_height": 1.65,
+              "weight": 400,
+              "tracking": 0
+            },
+            {
+              "name": "Action",
+              "role": "body",
+              "size": 13,
+              "line_height": 1.5,
+              "weight": 500,
+              "tracking": 0
+            }
+          ]
+        },
+        "spacing": {
+          "enabled": true,
+          "introduction": "De l’air autour des images et des gestes.",
+          "instructions": "Le site utilise un cadre maximal de 1600 px, des gouttières de 24 px sur mobile et de 64 px sur grand écran. Les sections alternent rythme compact et grandes respirations. Sur mobile, les titres et textes éditoriaux occupent toute la largeur du conteneur et partagent le même bord gauche que les images, avec la gouttière PageGutter. Le cadre commun utilise SiteWidth. Le bandeau jaune affiche trois messages distincts, centrés et empilés verticalement ; il devient horizontal au seuil LayoutBreakpoint. Les compositions à deux colonnes commencent au même seuil pour éviter de comprimer les grands titres sur tablette. Les grilles passent par deux colonnes sur tablette avant trois sur grand écran. Le menu mobile remplit le viewport dynamique (100dvh), avec le même retrait PageGutter; ses coordonnées restent une présentation temporaire dans Siteboard.",
+          "provenance": "extracted",
+          "source_asset_ids": [],
+          "prompts": [],
+          "moodboard": [],
+          "references": [],
+          "steps": [
+            {
+              "name": "xs",
+              "value": 4
+            },
+            {
+              "name": "sm",
+              "value": 8
+            },
+            {
+              "name": "md",
+              "value": 16
+            },
+            {
+              "name": "lg",
+              "value": 24
+            },
+            {
+              "name": "xl",
+              "value": 32
+            },
+            {
+              "name": "2xl",
+              "value": 48
+            },
+            {
+              "name": "3xl",
+              "value": 64
+            }
+          ],
+          "container_width": 1600,
+          "page_gutter": 24,
+          "section_spacing": 64,
+          "content_gap": 24
+        },
+        "colors": {
+          "enabled": true,
+          "introduction": "Du bordeaux, du beurre et une crème douce.",
+          "instructions": "Tous les boutons utilisent la même forme pilule, définie par --radius-button. Les appels à l’action partagent un espacement py-3.5 px-6, le corps text-label et une bordure de 1 px. Le bouton principal utilise le fond bordeaux et le texte jaune beurre ; au survol, le fond et la bordure passent au token Encre. La variante contour utilise un fond transparent, le texte et la bordure bordeaux ; au survol, le fond devient bordeaux et le texte jaune beurre. Sur une surface bordeaux, utiliser la variante inverse : fond beurre, texte bordeaux et fond crème au survol. Chaque variante conserve un contour de focus visible dans sa couleur de bordure et respecte la réduction des animations.",
+          "provenance": "extracted",
+          "source_asset_ids": [],
+          "prompts": [],
+          "moodboard": [],
+          "references": [],
+          "palette": [
+            {
+              "name": "Bordeaux",
+              "value": "#591b2b",
+              "role": "primary"
+            },
+            {
+              "name": "Beurre",
+              "value": "#f5df87",
+              "role": "accent"
+            },
+            {
+              "name": "Crème",
+              "value": "#faf5eb",
+              "role": "background"
+            },
+            {
+              "name": "Encre",
+              "value": "#441d25",
+              "role": "text"
+            },
+            {
+              "name": "Ligne",
+              "value": "#decdbd",
+              "role": "border"
+            },
+            {
+              "name": "Rose",
+              "value": "#f0ddd6",
+              "role": "surface"
+            }
+          ],
+          "pairings": [
+            {
+              "foreground": "Bordeaux",
+              "background": "Beurre",
+              "usage": "body"
+            },
+            {
+              "foreground": "Encre",
+              "background": "Crème",
+              "usage": "body"
+            },
+            {
+              "foreground": "Crème",
+              "background": "Bordeaux",
+              "usage": "body"
+            },
+            {
+              "foreground": "Beurre",
+              "background": "Bordeaux",
+              "usage": "body"
+            },
+            {
+              "foreground": "Beurre",
+              "background": "Encre",
+              "usage": "body"
+            },
+            {
+              "foreground": "Bordeaux",
+              "background": "Rose",
+              "usage": "body"
+            }
+          ]
+        },
+        "visuals": {
+          "enabled": true,
+          "introduction": "Le produit, la matière et les mains.",
+          "instructions": "Utiliser les fichiers locaux du starter et conserver leurs crédits. Ces photographies illustrent un concept de démonstration. Ne pas présenter les personnes ou produits photographiés comme une équipe ou une production réelle de Miette. Les photographies et les cadres visuels de la carte utilisent des angles légèrement arrondis, via le token --radius-image et l’utilitaire rounded-image. Appliquer le même rayon aux héros, aux produits, à la maison et au journal, en conservant les proportions et cadrages propres à chaque image. Le logo conserve son dessin original. Le guide référence le token du thème ; éviter les rayons isolés dans les composants. Les liens ordinaires réagissent au survol et au focus par un soulignement et une couleur contrastée. Les boutons et cartes cliquables ont un retour discret à la pression et utilisent les tokens InteractionDuration, InteractionEase et InteractionLift. Les cartes de sélection et du journal sont des liens natifs uniques, image et titre compris. Les filtres sélectionnés gardent un texte beurre sur un fond sombre au survol ; les révélateurs affichent leur véritable état ouvert. Conserver un contour de focus visible de 2 px, décalé de 4 px (vers l’intérieur pour les lignes pleine largeur). Respecter la réduction des mouvements en supprimant transitions et déplacements décoratifs. Sur écran tactile, l’appui reste visible sans survol : fond rose pour les cartes, fond sombre pour les commandes et fond beurre pour les liens dans les articles.",
+          "provenance": "extracted",
+          "source_asset_ids": [],
+          "prompts": [],
+          "moodboard": [
+            {
+              "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb105",
+              "caption": "Croissants dorés sur le comptoir d’une boulangerie."
+            },
+            {
+              "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb106",
+              "caption": "Des mains roulent la pâte à croissant sur une table farinée."
+            },
+            {
+              "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb107",
+              "caption": "Tarte aux framboises décorée d’une rose en pâte d’amande."
+            }
+          ],
+          "references": [
+            {
+              "label": "Julia Filirovska / Pexels",
+              "url": "https://www.pexels.com/photo/fresh-croissants-on-counter-in-bakery-7140434/",
+              "embed": false
+            },
+            {
+              "label": "Skyler Ewing / Pexels",
+              "url": "https://www.pexels.com/photo/hands-of-a-person-in-black-long-sleeve-shirt-rolling-pastry-10307512/",
+              "embed": false
+            },
+            {
+              "label": "Edouard G / Pexels",
+              "url": "https://www.pexels.com/photo/raspberry-tart-13752708/",
+              "embed": false
+            }
+          ],
+          "images": [
+            {
+              "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb105",
+              "caption": "Croissants dorés sur le comptoir d’une boulangerie.",
+              "role": "reference"
+            },
+            {
+              "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb106",
+              "caption": "Des mains roulent la pâte à croissant sur une table farinée.",
+              "role": "reference"
+            },
+            {
+              "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb107",
+              "caption": "Tarte aux framboises décorée d’une rose en pâte d’amande.",
+              "role": "reference"
+            }
+          ],
+          "direction": "Des croissants dorés, un plan de travail fariné et les couleurs naturelles du fruit. Lumière douce, cadrages proches et matière visible.",
+          "avoid": [
+            "Photographies sans provenance connue",
+            "Filtres saturés",
+            "Faux témoignages ou fausses affiliations"
+          ],
+          "brief": "Photographier {{subject}} pour {{use}} dans l’esprit de Miette : lumière naturelle, matière visible, composition calme et couleurs fidèles.",
+          "photography": "Privilégier le feuilletage, les mains et les détails gourmands. Garder les couleurs naturelles ; éviter les filtres prononcés.",
+          "illustration": "Le monogramme reste simple. Ne pas remplacer les photographies par des illustrations génériques.",
+          "icons": "Les flèches accompagnent les liens. Garder les signes sobres et lisibles."
+        },
+        "social_media": {
+          "enabled": true,
+          "introduction": "Une petite nouvelle du fournil.",
+          "instructions": "Les exemples sont des propositions de contenu. Aucun compte social réel n’est fourni par ce starter.",
+          "provenance": "extracted",
+          "source_asset_ids": [],
+          "prompts": [],
+          "moodboard": [],
+          "references": [],
+          "channels": [
+            {
+              "name": "Instagram",
+              "handle": "",
+              "url": null
+            }
+          ],
+          "formats": [
+            {
+              "name": "Portrait",
+              "channel": "Instagram",
+              "width": 1080,
+              "height": 1350,
+              "guidance": "Une photo de produit et une phrase courte. Ne pas couvrir le feuilletage de texte."
+            }
+          ],
+          "principles": [
+            "Montrer un geste ou un détail concret.",
+            "Donner une information utile avant une invitation."
+          ],
+          "examples": [
+            {
+              "label": "Au réveil",
+              "channel": "Instagram",
+              "format": "Portrait",
+              "copy": "Du beurre. Quelques miettes. Et la journée peut commencer.",
+              "asset_id": "bc4824ab-80db-4786-8ddd-2471c2ffb105"
+            }
+          ]
+        }
+      },
+      "assets": {
+        "bc4824ab-80db-4786-8ddd-2471c2ffb101": {
+          "name": "Monogramme Miette",
+          "role": "logo",
+          "chapter": "logo",
+          "caption": "Monogramme existant du starter, extrait du favicon. Le nom en DM Serif Display accompagne ce symbole sur le site.",
+          "alt_text": "M de Miette, jaune beurre sur fond bordeaux.",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": true,
+          "license_url": "https://github.com/block-bite/blockbite-starter-kits/blob/main/LICENSE",
+          "provenance": "extracted",
+          "category": "logo"
+        },
+        "bc4824ab-80db-4786-8ddd-2471c2ffb102": {
+          "name": "DM Serif Display Regular",
+          "role": "font",
+          "chapter": "typography",
+          "caption": "",
+          "alt_text": "",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": true,
+          "license_url": "https://openfontlicense.org/",
+          "provenance": "extracted"
+        },
+        "bc4824ab-80db-4786-8ddd-2471c2ffb103": {
+          "name": "DM Serif Display Italic",
+          "role": "font",
+          "chapter": "typography",
+          "caption": "",
+          "alt_text": "",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": true,
+          "license_url": "https://openfontlicense.org/",
+          "provenance": "extracted"
+        },
+        "bc4824ab-80db-4786-8ddd-2471c2ffb104": {
+          "name": "Geist Variable",
+          "role": "font",
+          "chapter": "typography",
+          "caption": "",
+          "alt_text": "",
+          "classification": "approved",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": true,
+          "license_url": "https://openfontlicense.org/",
+          "provenance": "extracted"
+        },
+        "bc4824ab-80db-4786-8ddd-2471c2ffb105": {
+          "name": "Croissants dorés sur le comptoir d’une boulangerie.",
+          "role": "image",
+          "chapter": "visuals",
+          "caption": "Photo de Julia Filirovska / Pexels. Image d’illustration du concept, pas une photographie de produits réels de Miette. Source : https://www.pexels.com/photo/fresh-croissants-on-counter-in-bakery-7140434/",
+          "alt_text": "Croissants dorés sur le comptoir d’une boulangerie.",
+          "classification": "reference",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": true,
+          "license_url": "https://www.pexels.com/legal-pages/license/",
+          "provenance": "extracted",
+          "category": "photography"
+        },
+        "bc4824ab-80db-4786-8ddd-2471c2ffb106": {
+          "name": "Des mains roulent la pâte à croissant sur une table farinée.",
+          "role": "image",
+          "chapter": "visuals",
+          "caption": "Photo de Skyler Ewing / Pexels. Image d’illustration du concept, pas une photographie de produits réels de Miette. Source : https://www.pexels.com/photo/hands-of-a-person-in-black-long-sleeve-shirt-rolling-pastry-10307512/",
+          "alt_text": "Des mains roulent la pâte à croissant sur une table farinée.",
+          "classification": "reference",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": true,
+          "license_url": "https://www.pexels.com/legal-pages/license/",
+          "provenance": "extracted",
+          "category": "photography"
+        },
+        "bc4824ab-80db-4786-8ddd-2471c2ffb107": {
+          "name": "Tarte aux framboises décorée d’une rose en pâte d’amande.",
+          "role": "image",
+          "chapter": "visuals",
+          "caption": "Photo de Edouard G / Pexels. Image d’illustration du concept, pas une photographie de produits réels de Miette. Source : https://www.pexels.com/photo/raspberry-tart-13752708/",
+          "alt_text": "Tarte aux framboises décorée d’une rose en pâte d’amande.",
+          "classification": "reference",
+          "display_allowed": true,
+          "download_allowed": true,
+          "generation_allowed": false,
+          "hosting_confirmed": true,
+          "license_url": "https://www.pexels.com/legal-pages/license/",
+          "provenance": "extracted",
+          "category": "photography"
+        }
+      },
+      "design_system": {
+        "schema": "blockbite.design-system/v1",
+        "tokens": {
+          "Bordeaux": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-bordeaux"
+            },
+            "usage": "Identité, titres, fond du bouton principal et texte/bordure de sa variante contour",
+            "rationale": "Token extrait du thème natif du starter.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Beurre": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-beurre"
+            },
+            "usage": "Accents, texte du bouton principal et fond de sa variante inverse",
+            "rationale": "Token extrait du thème natif du starter.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Creme": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-creme"
+            },
+            "usage": "Fond de page",
+            "rationale": "Token extrait du thème natif du starter.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Encre": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-encre"
+            },
+            "usage": "Texte courant",
+            "rationale": "Token extrait du thème natif du starter.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Rose": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-rose"
+            },
+            "usage": "Surface secondaire",
+            "rationale": "Token extrait du thème natif du starter.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Ligne": {
+            "kind": "color",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--color-ligne"
+            },
+            "usage": "Séparateurs",
+            "rationale": "Token extrait du thème natif du starter.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Display": {
+            "kind": "font",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--font-display"
+            },
+            "usage": "Titres",
+            "rationale": "Token extrait du thème natif du starter.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "Body": {
+            "kind": "font",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--font-sans"
+            },
+            "usage": "Texte et navigation",
+            "rationale": "Token extrait du thème natif du starter.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "ButtonRadius": {
+            "kind": "radius",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--radius-button"
+            },
+            "usage": "Forme pilule commune aux boutons pleins, inverses, à contour et aux filtres de la carte",
+            "rationale": "La demande utilisateur impose des boutons ronds et cohérents. Le rayon commun appartient au thème natif.",
+            "provenance": "proposed",
+            "status": "proposed"
+          },
+          "ImageRadius": {
+            "kind": "radius",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--radius-image"
+            },
+            "usage": "Angles légèrement arrondis des photographies et des cadres visuels : accueil, produits, maison et journal",
+            "rationale": "La demande utilisateur adoucit les images. Le rayon appartient au thème natif ; le guide référence ce même token pour conserver une source de vérité.",
+            "provenance": "proposed",
+            "status": "proposed"
+          },
+          "InteractionDuration": {
+            "kind": "motion",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--duration-interaction"
+            },
+            "usage": "Durée commune des retours visuels au survol, au focus et à la pression",
+            "rationale": "La demande utilisateur rend les interactions explicites. Le guide référence le token du thème natif, sans dupliquer sa valeur.",
+            "provenance": "proposed",
+            "status": "proposed"
+          },
+          "InteractionEase": {
+            "kind": "motion",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--ease-interaction"
+            },
+            "usage": "Courbe de transition douce commune aux liens, cartes et commandes",
+            "rationale": "La demande utilisateur rend les interactions explicites. Le guide référence le token du thème natif, sans dupliquer sa valeur.",
+            "provenance": "proposed",
+            "status": "proposed"
+          },
+          "InteractionLift": {
+            "kind": "spacing",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--spacing-interaction-lift"
+            },
+            "usage": "Léger déplacement des boutons et cartes cliquables, uniquement sans préférence de réduction des mouvements",
+            "rationale": "La demande utilisateur rend les interactions explicites. Le guide référence le token du thème natif, sans dupliquer sa valeur.",
+            "provenance": "proposed",
+            "status": "proposed"
+          },
+          "PageGutter": {
+            "kind": "spacing",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--spacing-page-gutter"
+            },
+            "usage": "Gouttière commune des pages et sections sur mobile",
+            "rationale": "Le guide référence les règles de mise en page du thème natif pour préserver des alignements cohérents sur mobile et écran large.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "SiteWidth": {
+            "kind": "size",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--container-site"
+            },
+            "usage": "Largeur maximale commune du cadre du site et de ses conteneurs",
+            "rationale": "Le guide référence les règles de mise en page du thème natif pour préserver des alignements cohérents sur mobile et écran large.",
+            "provenance": "extracted",
+            "status": "reviewed"
+          },
+          "LayoutBreakpoint": {
+            "kind": "layout",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--breakpoint-lg"
+            },
+            "usage": "Passage des compositions en colonnes et du bandeau en ligne sur écran large",
+            "rationale": "Le guide référence les règles de mise en page du thème natif pour préserver des alignements cohérents sur mobile et écran large.",
+            "provenance": "proposed",
+            "status": "proposed"
+          },
+          "NavigationDuration": {
+            "kind": "motion",
+            "definition": {
+              "kind": "project",
+              "path": "src/styles/theme.css",
+              "variable": "--duration-navigation"
+            },
+            "usage": "Ouverture et fermeture du menu mobile natif, sans mouvement si la préférence système le demande.",
+            "rationale": "Le guide référence le token de durée du thème, utilisé par le script natif du menu.",
+            "provenance": "proposed",
+            "status": "proposed"
+          }
+        },
+        "components": {},
+        "roles": {}
+      }
+    },
+    "assets": [
+      {
+        "name": "Monogramme Miette",
+        "role": "logo",
+        "chapter": "logo",
+        "caption": "Monogramme existant du starter, extrait du favicon. Le nom en DM Serif Display accompagne ce symbole sur le site.",
+        "alt_text": "M de Miette, jaune beurre sur fond bordeaux.",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": true,
+        "license_url": "https://github.com/block-bite/blockbite-starter-kits/blob/main/LICENSE",
+        "provenance": "extracted",
+        "category": "logo",
+        "id": "bc4824ab-80db-4786-8ddd-2471c2ffb101",
+        "original_filename": "favicon.svg",
+        "kind": "image",
+        "mime_type": "image/svg+xml",
+        "byte_size": 1906,
+        "width": 64,
+        "height": 64,
+        "sha256": "a6812dc1ce892bcd65cbbf8b98b702e7b7d06a8bd70bd9544f5355523a788982",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "DM Serif Display Regular",
+        "role": "font",
+        "chapter": "typography",
+        "caption": "",
+        "alt_text": "",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": true,
+        "license_url": "https://openfontlicense.org/",
+        "provenance": "extracted",
+        "id": "bc4824ab-80db-4786-8ddd-2471c2ffb102",
+        "original_filename": "dm-serif-display.woff2",
+        "kind": "font",
+        "mime_type": "font/woff2",
+        "byte_size": 17844,
+        "width": null,
+        "height": null,
+        "sha256": "f273cf2c9ce9bc7d6b0f4fcb8aee72f8cf5a249991308b6a144217e0760c5d3f",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "DM Serif Display Italic",
+        "role": "font",
+        "chapter": "typography",
+        "caption": "",
+        "alt_text": "",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": true,
+        "license_url": "https://openfontlicense.org/",
+        "provenance": "extracted",
+        "id": "bc4824ab-80db-4786-8ddd-2471c2ffb103",
+        "original_filename": "dm-serif-display-italic.woff2",
+        "kind": "font",
+        "mime_type": "font/woff2",
+        "byte_size": 17660,
+        "width": null,
+        "height": null,
+        "sha256": "94b0e8fc568c1361f31de02a91297adf78a5a926f4a86932f22643e504cd012f",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Geist Variable",
+        "role": "font",
+        "chapter": "typography",
+        "caption": "",
+        "alt_text": "",
+        "classification": "approved",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": true,
+        "license_url": "https://openfontlicense.org/",
+        "provenance": "extracted",
+        "id": "bc4824ab-80db-4786-8ddd-2471c2ffb104",
+        "original_filename": "geist.woff2",
+        "kind": "font",
+        "mime_type": "font/woff2",
+        "byte_size": 29400,
+        "width": null,
+        "height": null,
+        "sha256": "19f9c92546aa300c312235e3125af1b81394d8db9a4bc4a425cd5b641d2d54e1",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Croissants dorés sur le comptoir d’une boulangerie.",
+        "role": "image",
+        "chapter": "visuals",
+        "caption": "Photo de Julia Filirovska / Pexels. Image d’illustration du concept, pas une photographie de produits réels de Miette. Source : https://www.pexels.com/photo/fresh-croissants-on-counter-in-bakery-7140434/",
+        "alt_text": "Croissants dorés sur le comptoir d’une boulangerie.",
+        "classification": "reference",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": true,
+        "license_url": "https://www.pexels.com/legal-pages/license/",
+        "provenance": "extracted",
+        "category": "photography",
+        "id": "bc4824ab-80db-4786-8ddd-2471c2ffb105",
+        "original_filename": "croissants.jpg",
+        "kind": "image",
+        "mime_type": "image/jpeg",
+        "byte_size": 75674,
+        "width": 1164,
+        "height": 750,
+        "sha256": "22c44723bcf9feedc8b461dcb5187784196925bdebcde9d2e0808efc0c595e0b",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Des mains roulent la pâte à croissant sur une table farinée.",
+        "role": "image",
+        "chapter": "visuals",
+        "caption": "Photo de Skyler Ewing / Pexels. Image d’illustration du concept, pas une photographie de produits réels de Miette. Source : https://www.pexels.com/photo/hands-of-a-person-in-black-long-sleeve-shirt-rolling-pastry-10307512/",
+        "alt_text": "Des mains roulent la pâte à croissant sur une table farinée.",
+        "classification": "reference",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": true,
+        "license_url": "https://www.pexels.com/legal-pages/license/",
+        "provenance": "extracted",
+        "category": "photography",
+        "id": "bc4824ab-80db-4786-8ddd-2471c2ffb106",
+        "original_filename": "atelier.jpg",
+        "kind": "image",
+        "mime_type": "image/jpeg",
+        "byte_size": 108911,
+        "width": 1125,
+        "height": 750,
+        "sha256": "f50c33e18251b60db685aac15143968c443f444cb9f53a5cfbf641e9b1df9ec4",
+        "preview_url": null,
+        "download_url": null
+      },
+      {
+        "name": "Tarte aux framboises décorée d’une rose en pâte d’amande.",
+        "role": "image",
+        "chapter": "visuals",
+        "caption": "Photo de Edouard G / Pexels. Image d’illustration du concept, pas une photographie de produits réels de Miette. Source : https://www.pexels.com/photo/raspberry-tart-13752708/",
+        "alt_text": "Tarte aux framboises décorée d’une rose en pâte d’amande.",
+        "classification": "reference",
+        "display_allowed": true,
+        "download_allowed": true,
+        "generation_allowed": false,
+        "hosting_confirmed": true,
+        "license_url": "https://www.pexels.com/legal-pages/license/",
+        "provenance": "extracted",
+        "category": "photography",
+        "id": "bc4824ab-80db-4786-8ddd-2471c2ffb107",
+        "original_filename": "patisseries.jpg",
+        "kind": "image",
+        "mime_type": "image/jpeg",
+        "byte_size": 165075,
+        "width": 779,
+        "height": 750,
+        "sha256": "32e91aef74f6143e0dbef89a05e1783c01ad923872867cbed189e24ac2cb85c7",
+        "preview_url": null,
+        "download_url": null
+      }
+    ],
+    "findings": {
+      "errors": [],
+      "warnings": []
+    },
+    "preview_url": null,
+    "page_url": null,
+    "example_url": ""
+  },
+  "files": [
+    {
+      "id": "bc4824ab-80db-4786-8ddd-2471c2ffb101",
+      "filename": "bc4824ab-80db-4786-8ddd-2471c2ffb101.svg",
+      "preview": null,
+      "mime": "image/svg+xml"
+    },
+    {
+      "id": "bc4824ab-80db-4786-8ddd-2471c2ffb102",
+      "filename": "bc4824ab-80db-4786-8ddd-2471c2ffb102.woff2",
+      "preview": null,
+      "mime": "font/woff2"
+    },
+    {
+      "id": "bc4824ab-80db-4786-8ddd-2471c2ffb103",
+      "filename": "bc4824ab-80db-4786-8ddd-2471c2ffb103.woff2",
+      "preview": null,
+      "mime": "font/woff2"
+    },
+    {
+      "id": "bc4824ab-80db-4786-8ddd-2471c2ffb104",
+      "filename": "bc4824ab-80db-4786-8ddd-2471c2ffb104.woff2",
+      "preview": null,
+      "mime": "font/woff2"
+    },
+    {
+      "id": "bc4824ab-80db-4786-8ddd-2471c2ffb105",
+      "filename": "bc4824ab-80db-4786-8ddd-2471c2ffb105.jpg",
+      "preview": null,
+      "mime": "image/jpeg"
+    },
+    {
+      "id": "bc4824ab-80db-4786-8ddd-2471c2ffb106",
+      "filename": "bc4824ab-80db-4786-8ddd-2471c2ffb106.jpg",
+      "preview": null,
+      "mime": "image/jpeg"
+    },
+    {
+      "id": "bc4824ab-80db-4786-8ddd-2471c2ffb107",
+      "filename": "bc4824ab-80db-4786-8ddd-2471c2ffb107.jpg",
+      "preview": null,
+      "mime": "image/jpeg"
+    }
+  ]
+}

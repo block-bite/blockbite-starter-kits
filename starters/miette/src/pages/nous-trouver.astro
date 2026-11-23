@@ -1,0 +1,13 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { getEntry } from 'astro:content';
+import HeroVisit from '../islands/hero/visit/Island.astro';
+import VisitInformation from '../islands/visit/information/Island.astro';
+const page = await getEntry('pages', 'visite');
+if (!page) throw new Error('Missing visite content.');
+---
+
+<SiteLayout title={page.data.title} description="Préparez votre visite chez Miette Club.">
+  <HeroVisit {...page.data.sections[0].fields} />
+  <VisitInformation {...page.data.sections[1].fields} />
+</SiteLayout>

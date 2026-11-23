@@ -1,0 +1,23 @@
+version: 1
+fields:
+  image:
+    type: image
+    label: Image
+  imageAlt:
+    type: string
+    label: Image Alt
+  leBonSansLesManieresEyebrow:
+    type: string
+    label: Le Bon Sans Les Manieres Eyebrow
+  leBonSansLesManieresHeading:
+    type: string
+    label: Le Bon Sans Les Manieres Heading
+  leBonSansLesManieresBody:
+    type: string
+    label: Le Bon Sans Les Manieres Body
+  leBonSansLesManieresAction:
+    type: string
+    label: Le Bon Sans Les Manieres Action
+  leBonSansLesManieresHref:
+    type: link
+    label: Le Bon Sans Les Manieres Href

@@ -1,0 +1,65 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+import arrowDownRight from '../../../../brand/assets/824b8f41-1dcd-4f2c-b8d3-e2bf9bf7be56.svg?url';
+import arrowLeft from '../../../../brand/assets/727a0e19-c157-480d-95c8-5a13e4f32bc1.svg?url';
+import arrowRight from '../../../../brand/assets/28b64bd3-a932-48b5-b9ed-e2e9e5402788.svg?url';
+
+type Props = IslandProps<'collection/arrivals'>;
+const {
+  heading,
+  shoeName, shoePrice, shoeImage, shoeAlt, shoeLinkLabel, shoeHref,
+  teeName, teePrice, teeImage, teeAlt,
+  lookName, lookDescription, lookImage, lookAlt,
+} = Astro.props;
+---
+
+<section id="collection" class="min-h-dvh collection bg-carbon text-white" data-collection aria-labelledby="collection-title">
+  <div class="collection-stage min-h-dvh" data-collection-stage>
+    <div class="shifft-gutter flex flex-wrap items-center justify-between gap-x-8 gap-y-4">
+      <h2 id="collection-title" class="shifft-display text-[clamp(2.65rem,7vw,8rem)] uppercase">{heading}</h2>
+      <div class="collection-controls ms-auto flex items-center gap-2" data-collection-controls hidden>
+        <span class="mr-2 min-w-[3.5rem] text-center text-xs font-semibold tabular-nums" aria-live="polite" aria-atomic="true" data-collection-counter></span>
+        <button type="button" data-collection-prev aria-label="Previous look" aria-controls="collection-frames">
+          <img src={arrowLeft} width="20" height="20" alt="" />
+        </button>
+        <button type="button" data-collection-next aria-label="Next look" aria-controls="collection-frames">
+          <img src={arrowRight} width="20" height="20" alt="" />
+        </button>
+      </div>
+    </div>
+    <div id="collection-frames" class="collection-frames" tabindex="0" role="region" aria-label="Collection looks" data-collection-track>
+      <article id="trail-look" class="collection-frame">
+        <div class="collection-media">
+          <img src={shoeImage} alt={shoeAlt} width="1302" height="1208" class="collection-cutout" loading="lazy" decoding="async" />
+        </div>
+        <div class="collection-caption">
+          <h3>{shoeName}</h3>
+          <p>{shoePrice}</p>
+          <a class="collection-link" href={shoeHref}>
+            {shoeLinkLabel}
+            <img src={arrowDownRight} width="16" height="16" alt="" />
+          </a>
+        </div>
+      </article>
+      <article id="tee-look" class="collection-frame">
+        <div class="collection-media">
+          <img src={teeImage} alt={teeAlt} width="1122" height="1402" class="collection-cutout" loading="lazy" decoding="async" />
+        </div>
+        <div class="collection-caption">
+          <h3>{teeName}</h3>
+          <p>{teePrice}</p>
+        </div>
+      </article>
+      <article id="white-look" class="collection-frame">
+        <div class="collection-media">
+          <img src={lookImage} alt={lookAlt} width="1448" height="1086" class="collection-portrait" loading="lazy" decoding="async" />
+        </div>
+        <div class="collection-caption">
+          <h3>{lookName}</h3>
+          <p>{lookDescription}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  <script src="./collection-motion.ts"></script>
+</section>

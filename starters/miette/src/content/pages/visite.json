@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "template": "page",
+  "title": "Nous trouver — Miette Club",
+  "sections": [
+    {
+      "island": "hero/visit",
+      "fields": {
+        "invitationEyebrow": "PARIS, BIENTÔT À VOUS.",
+        "invitationHeading": "Votre prochain\nrendez-vous\ngourmand.",
+        "invitationBody": "Un comptoir pour les pressés. Une table pour ceux qui restent.\nEt toujours une bonne odeur de beurre.",
+        "invitationAction": "Explorer la carte en attendant ↗",
+        "invitationHref": "/la-carte/",
+        "image": "/images/croissants.jpg",
+        "imageAlt": "Croissants dorés sur le comptoir d’une boulangerie."
+      }
+    },
+    {
+      "island": "visit/information",
+      "fields": {
+        "adresseEyebrow": "01 / LE LIEU",
+        "adresseHeading": "Paris.\nL’adresse arrive.",
+        "adresseBody": "Le quartier exact sera annoncé à l’ouverture.\nMiette Club est un concept de démonstration : aucun déplacement ni réservation n’est nécessaire.",
+        "leRythmeEyebrow": "02 / LES MOMENTS",
+        "leRythmeHeading": "Du premier café\nau dernier cookie.",
+        "leRythmeBody": "Petit déjeuner, pause de midi ou goûter qui s’éternise.\nHoraires à confirmer lors de l’ouverture.",
+        "lesQuestionsEyebrow": "03 / EN TOUTE SIMPLICITÉ",
+        "lesQuestionsHeading": "On en parle ?",
+        "lesQuestionsAction": "Sur place ou à emporter ?",
+        "lesQuestionsDetail": "Les deux font partie du concept : un café au comptoir, une pause à table ou une boîte à emporter.",
+        "lesQuestionsActionNote": "Et les allergènes ?",
+        "lesQuestionsDetailNote": "Chaque produit de la carte affiche ses allergènes indicatifs. Une équipe réelle devra confirmer les recettes et risques de contamination avant toute vente."
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { getEntry } from 'astro:content';
+import HeroHome from '../islands/hero/home/Island.astro';
+import SiteMarquee from '../islands/site/marquee/Island.astro';
+import FeaturesSignatures from '../islands/features/signatures/Island.astro';
+import StoryPhilosophy from '../islands/story/philosophy/Island.astro';
+import InvitationVisit from '../islands/invitation/visit/Island.astro';
+const page = await getEntry('pages', 'accueil');
+if (!page) throw new Error('Missing accueil content.');
+---
+
+<SiteLayout title={page.data.title} description="Boulangerie artisanale Miette Club : du beurre, du beau, du bonheur.">
+  <HeroHome {...page.data.sections[0].fields} />
+  <SiteMarquee {...page.data.sections[1].fields} />
+  <FeaturesSignatures {...page.data.sections[2].fields} />
+  <StoryPhilosophy {...page.data.sections[3].fields} />
+  <InvitationVisit {...page.data.sections[4].fields} />
+</SiteLayout>

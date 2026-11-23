@@ -1,0 +1,45 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+import MenuFilter from '../../../components/menu/MenuFilter.astro';
+type Props = IslandProps<'hero/menu'>;
+const { eyebrow, heading, body, filters } = Astro.props;
+---
+
+<section class="bg-rose py-12 px-page-gutter gap-[26px] text-base text-left w-full max-w-full flex flex-col items-stretch justify-start md:py-20 md:px-16">
+  <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{eyebrow}</p>
+  <h1 class="text-bordeaux font-display font-normal text-title-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:text-large md:tracking-[-1.5px]">{heading}</h1>
+  <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{body}</p>
+  <MenuFilter options={filters}></MenuFilter>
+<script>
+  class MietteMenuFilter extends HTMLElement {
+    controller?: AbortController;
+
+    connectedCallback() {
+      this.controller?.abort();
+      this.controller = new AbortController();
+      const products = this.ownerDocument.getElementById('menu-products');
+      if (!products) return;
+      const cards = [...products.querySelectorAll<HTMLElement>('[data-category]')];
+      const buttons = [...this.querySelectorAll<HTMLButtonElement>('button[data-category]')];
+      const output = this.querySelector('output');
+      const select = (category: string) => {
+        let count = 0;
+        for (const card of cards) {
+          card.hidden = category !== 'all' && card.dataset.category !== category;
+          if (!card.hidden) count++;
+        }
+        for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.category === category));
+        if (output) output.textContent = `${count} plaisir${count === 1 ? '' : 's'} à découvrir`;
+      };
+      for (const button of buttons) button.addEventListener('click', () => select(button.dataset.category ?? 'all'), { signal: this.controller.signal });
+      select('all');
+    }
+
+    disconnectedCallback() {
+      this.controller?.abort();
+      this.controller = undefined;
+    }
+  }
+  if (!customElements.get('miette-menu-filter')) customElements.define('miette-menu-filter', MietteMenuFilter);
+</script>
+</section>

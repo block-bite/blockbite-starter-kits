@@ -1,0 +1,39 @@
+version: 1
+fields:
+  products:
+    type: repeater
+    label: Products
+    fields:
+      image:
+        type: image
+        label: Image
+      imageAlt:
+        type: string
+        label: Image alt
+      eyebrow:
+        type: string
+        label: Eyebrow
+      heading:
+        type: string
+        label: Heading
+      description:
+        type: string
+        label: Description
+      price:
+        type: string
+        label: Price
+      detailsLabel:
+        type: string
+        label: Details label
+      details:
+        type: string
+        label: Details
+      illustration:
+        type: string
+        label: Illustration
+      category:
+        type: string
+        label: Category
+  note:
+    type: string
+    label: Menu note

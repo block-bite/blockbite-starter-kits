@@ -1,0 +1,17 @@
+version: 1
+fields:
+  eyebrow:
+    type: string
+    label: Eyebrow
+  heading:
+    type: string
+    label: Heading
+  body:
+    type: string
+    label: Body
+  action:
+    type: string
+    label: Action
+  actionHref:
+    type: link
+    label: Action Href

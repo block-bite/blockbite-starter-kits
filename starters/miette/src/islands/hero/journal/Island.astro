@@ -1,0 +1,11 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'hero/journal'>;
+const { eyebrow, heading, body } = Astro.props;
+---
+
+<section class="bg-beurre py-12 px-page-gutter gap-8 text-base text-left w-full max-w-full flex flex-col items-stretch justify-start md:py-20 md:px-16">
+  <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{eyebrow}</p>
+  <h1 class="text-bordeaux font-display font-normal text-title-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:text-visit md:tracking-[-1.5px]">{heading}</h1>
+  <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{body}</p>
+</section>

@@ -1,0 +1,15 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+import ProductCard from '../../../components/menu/ProductCard.astro';
+type Props = IslandProps<'menu/collection'>;
+const { products, note } = Astro.props;
+---
+
+<section class="bg-creme px-page-gutter py-12 md:px-16 md:py-20">
+  <div id="menu-products" class="grid gap-9 md:grid-cols-2 lg:grid-cols-3">
+    {products.map((product, index) => (
+      <ProductCard {...product} anchor={products.findIndex(item => item.category === product.category) === index ? product.category : undefined} />
+    ))}
+  </div>
+  <p class="mt-8 text-caption leading-relaxed text-encre">{note}</p>
+</section>

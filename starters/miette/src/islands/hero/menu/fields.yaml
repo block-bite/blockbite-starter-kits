@@ -1,0 +1,21 @@
+version: 1
+fields:
+  eyebrow:
+    type: string
+    label: Eyebrow
+  heading:
+    type: string
+    label: Heading
+  body:
+    type: string
+    label: Body
+  filters:
+    type: repeater
+    label: Filters
+    fields:
+      label:
+        type: string
+        label: Label
+      category:
+        type: string
+        label: Category

@@ -1,0 +1,15 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+type Props = IslandProps<'journal/slow-mornings'>;
+const { image, imageAlt, histoireEyebrow, histoireHeading, histoireBody, histoireAction, histoireHref } = Astro.props;
+---
+
+<a href={histoireHref} class="bg-creme py-12 px-page-gutter gap-8 lg:gap-16 text-base text-left w-full max-w-full flex flex-col items-center justify-start md:py-14 md:px-16 lg:flex-row lg:flex-wrap group rounded-image cursor-pointer transition duration-(--duration-interaction) ease-interaction motion-reduce:transition-none focus-visible:outline-2 focus-visible:outline-bordeaux motion-safe:hover:-translate-y-interaction-lift motion-safe:focus-visible:-translate-y-interaction-lift motion-safe:active:translate-y-0 focus-visible:outline-offset-[-4px] active:text-encre active:bg-rose">
+  <img class="rounded-image bg-ligne text-base text-left max-w-full grow-0 shrink-0 basis-auto h-70 min-h-0 lg:w-[calc(50%_-_32px)] md:h-90 object-cover w-full" src={image} alt={imageAlt} loading="lazy" width="960" height="1200" />
+  <div class="gap-6 text-base text-left max-w-full flex flex-col items-stretch justify-start lg:w-[calc(50%_-_32px)] md:grow-0 md:shrink-0 md:basis-auto w-full min-w-0">
+    <p class="text-encre font-semibold text-eyebrow text-left max-w-full block min-w-0 leading-[1.65] tracking-[1.8px] uppercase whitespace-pre-wrap">{histoireEyebrow}</p>
+    <h2 class="text-bordeaux font-display font-normal text-title-mobile text-left max-w-full block min-w-0 leading-[1.04] tracking-[-0.7px] whitespace-pre-wrap md:text-hero-mobile md:tracking-[-1.5px] group-hover:text-encre group-focus-visible:text-encre group-active:text-encre transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none">{histoireHeading}</h2>
+    <p class="text-encre text-base text-left max-w-full block min-w-0 leading-[1.65] whitespace-pre-wrap">{histoireBody}</p>
+    <span class="w-fit py-3 text-label font-medium text-bordeaux underline underline-offset-4 group-hover:decoration-2 group-focus-visible:decoration-2 transition-colors duration-(--duration-interaction) ease-interaction motion-reduce:transition-none">{histoireAction}</span>
+  </div>
+</a>

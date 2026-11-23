@@ -1,0 +1,80 @@
+version: 1
+fields:
+  heading:
+    type: string
+    label: Heading
+  notreSelectionEyebrow:
+    type: string
+    label: Notre Selection Eyebrow
+  notreSelectionBody:
+    type: string
+    label: Notre Selection Body
+  notreSelectionAction:
+    type: string
+    label: Notre Selection Action
+  notreSelectionHref:
+    type: link
+    label: Notre Selection Href
+  leCroissantImage:
+    type: image
+    label: Le Croissant Image
+  leCroissantImageAlt:
+    type: string
+    label: Le Croissant Image Alt
+  leCroissantEyebrow:
+    type: string
+    label: Le Croissant Eyebrow
+  leCroissantHeading:
+    type: string
+    label: Le Croissant Heading
+  leCroissantBody:
+    type: string
+    label: Le Croissant Body
+  leCroissantAction:
+    type: string
+    label: Le Croissant Action
+  leCroissantHref:
+    type: link
+    label: Le Croissant Href
+  laPatisserieImage:
+    type: image
+    label: La Patisserie Image
+  laPatisserieImageAlt:
+    type: string
+    label: La Patisserie Image Alt
+  laPatisserieEyebrow:
+    type: string
+    label: La Patisserie Eyebrow
+  laPatisserieHeading:
+    type: string
+    label: La Patisserie Heading
+  laPatisserieBody:
+    type: string
+    label: La Patisserie Body
+  laPatisserieAction:
+    type: string
+    label: La Patisserie Action
+  laPatisserieHref:
+    type: link
+    label: La Patisserie Href
+  leGesteImage:
+    type: image
+    label: Le Geste Image
+  leGesteImageAlt:
+    type: string
+    label: Le Geste Image Alt
+  leGesteEyebrow:
+    type: string
+    label: Le Geste Eyebrow
+  leGesteHeading:
+    type: string
+    label: Le Geste Heading
+  leGesteBody:
+    type: string
+    label: Le Geste Body
+  leGesteAction:
+    type: string
+    label: Le Geste Action
+  leGesteHref:
+    type: link
+    label: Le Geste Href

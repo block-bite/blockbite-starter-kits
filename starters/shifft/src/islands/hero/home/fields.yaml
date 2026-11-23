@@ -1,0 +1,26 @@
+version: 1
+fields:
+  season:
+    type: string
+    label: Collection season
+  heading:
+    type: string
+    label: Campaign headline
+  image:
+    type: image
+    label: Campaign image
+  imageAlt:
+    type: string
+    label: Campaign image alternative text
+  stripeImage:
+    type: image
+    label: Headline brush stripe
+  actionLabel:
+    type: string
+    label: Collection link label
+  actionHref:
+    type: link
+    label: Collection link
+  arrowImage:
+    type: image
+    label: Collection link arrow

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "template": "page",
+  "title": "La maison — Miette Club",
+  "sections": [
+    {
+      "island": "story/house",
+      "fields": {
+        "notreHistoireEyebrow": "UNE MAISON. UN ÉTAT D’ESPRIT.",
+        "notreHistoireHeading": "Sérieux sur\nle beurre.\nLéger sur le reste.",
+        "notreHistoireBody": "Miette Club est né d’une idée simple : garder le meilleur de la boulangerie française et ouvrir grand les fenêtres. Un lieu précis dans ses gestes, libre dans son humeur.",
+        "image": "/images/atelier.jpg",
+        "imageAlt": "Des mains roulent la pâte à croissant sur une table farinée."
+      }
+    },
+    {
+      "island": "values/essentials",
+      "fields": {
+        "eyebrow": "CE QUI NOUS RASSEMBLE",
+        "heading": "Pas de raccourcis.\nJuste de bonnes choses.",
+        "leTempsEyebrow": "01 / LE TEMPS",
+        "leTempsHeading": "Laisser faire\nles heures.",
+        "leTempsBody": "Le goût se construit doucement. Pétrir, laisser reposer, plier, recommencer. Chaque étape mérite son moment.",
+        "laMatiereEyebrow": "02 / LA MATIÈRE",
+        "laMatiereHeading": "Choisir peu.\nChoisir bien.",
+        "laMatiereBody": "Une farine choisie pour son goût, du vrai beurre, des fruits de saison. Des ingrédients reconnaissables, sans faire compliqué.",
+        "lePartageEyebrow": "03 / LE PARTAGE",
+        "lePartageHeading": "Une table.\nTout le monde.",
+        "lePartageBody": "Pas besoin de connaître les codes. Venez comme vous êtes, prenez ce qui vous fait envie. La gourmandise n’a pas de dress code."
+      }
+    },
+    {
+      "island": "invitation/menu",
+      "fields": {
+        "heading": "« Le meilleur moment,\nc’est la première bouchée. »",
+        "body": "LE MANIFESTE MIETTE CLUB",
+        "action": "Trouver votre prochaine bouchée ↗",
+        "actionHref": "/la-carte/"
+      }
+    }
+  ]
+}

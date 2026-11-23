@@ -1,0 +1,74 @@
+version: 1
+fields:
+  category:
+    type: string
+    label: Product category
+  heading:
+    type: string
+    label: Product name
+  image:
+    type: image
+    label: Product photograph
+  imageAlt:
+    type: string
+    label: Product photograph alternative text
+  price:
+    type: string
+    label: Sample price
+  description:
+    type: string
+    label: Product description
+  colourLabel:
+    type: string
+    label: Colour label
+  colour:
+    type: string
+    label: Product colour
+  sizeLabel:
+    type: string
+    label: Sizes label
+  sizes:
+    type: string
+    label: Product sizes
+  collectionLabel:
+    type: string
+    label: Return link label
+  collectionHref:
+    type: link
+    label: Return link destination
+  blushColour:
+    type: string
+    label: Blush colourway name
+  blushImage:
+    type: image
+    label: Blush product photograph
+  blushImageAlt:
+    type: string
+    label: Blush photograph alternative text
+  zoomLabel:
+    type: string
+    label: Open zoom label
+  closeLabel:
+    type: string
+    label: Close zoom label
+  studioLabel:
+    type: string
+    label: Studio thumbnail label
+  boxImage:
+    type: image
+    label: Shoebox photograph
+  boxImageAlt:
+    type: string
+    label: Shoebox photograph alternative text
+  boxLabel:
+    type: string
+    label: Shoebox thumbnail label
+  outsideImage:
+    type: image
+    label: Trail photograph
+  outsideImageAlt:
+    type: string
+    label: Trail photograph alternative text
+  outsideLabel:
+    type: string
+    label: Trail thumbnail label

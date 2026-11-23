@@ -1,0 +1,23 @@
+---
+import type { IslandProps } from '@blockbite/astro/islands';
+import arrowDownRight from '../../../../brand/assets/824b8f41-1dcd-4f2c-b8d3-e2bf9bf7be56.svg?url';
+
+type Props = IslandProps<'site/header'>;
+const { brand, brandAlt, brandHref, symbol, collectionLabel, collectionHref, storyLabel, storyHref } = Astro.props;
+---
+
+<header class="site-header shifft-gutter fixed inset-x-0 top-0 z-40 flex items-center justify-between gap-x-3 bg-carbon text-white sm:gap-x-5">
+  <a href={brandHref} class="inline-flex min-h-11 shrink-0 items-center gap-1.5">
+    <img src={symbol} alt="" width="128" height="125" class="h-7 w-7 object-contain" />
+    <img src={brand} alt={brandAlt} width="117" height="35" class="h-[1.35rem] w-auto object-contain" />
+  </a>
+  <nav aria-label="Main navigation" class="flex items-center gap-x-4 text-xs font-semibold sm:gap-x-9 sm:text-sm">
+    <a class="inline-flex min-h-11 items-center hover:underline" href={storyHref}>{storyLabel}</a>
+    <a class="group inline-flex min-h-11 items-center gap-1.5 hover:underline" href={collectionHref}>
+      {collectionLabel}
+      <img src={arrowDownRight} width="16" height="16" alt=""
+        class="shrink-0 invert motion-safe:transition-transform motion-safe:group-hover:translate-x-0.5 motion-safe:group-hover:translate-y-0.5" />
+    </a>
+  </nav>
+  <script src="./header-scroll.ts"></script>
+</header>

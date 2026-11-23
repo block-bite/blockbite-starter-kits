@@ -1,0 +1,13 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { getEntry } from 'astro:content';
+import HeroMenu from '../islands/hero/menu/Island.astro';
+import MenuCollection from '../islands/menu/collection/Island.astro';
+const page = await getEntry('pages', 'carte');
+if (!page) throw new Error('Missing carte content.');
+---
+
+<SiteLayout title={page.data.title} description="Viennoiseries, pâtisseries et café : découvrez la carte de Miette Club.">
+  <HeroMenu {...page.data.sections[0].fields} />
+  <MenuCollection {...page.data.sections[1].fields} />
+</SiteLayout>
